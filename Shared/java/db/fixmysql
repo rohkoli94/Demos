@@ -1,5 +1,0 @@
-#!/bin/bash
-sudo /etc/init.d/mysqld stop > /dev/null 2>&1
-sudo rm /var/lib/mysql/mysql.sock > /dev/null 2>&1
-sudo /etc/init.d/mysqld start > /dev/null 2>&1
-
