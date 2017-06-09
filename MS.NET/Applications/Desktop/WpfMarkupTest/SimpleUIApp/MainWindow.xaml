@@ -1,0 +1,32 @@
+﻿<Window x:Class="SimpleUIApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleUIApp"
+        mc:Ignorable="d"
+        Title="SimpleUIApp" Height="250" Width="250">
+    <Grid Button.Click="Grid_ButtonClick">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="outputtextBlock" TextWrapping="Wrap" Text="Welcome User" Margin="10" Grid.ColumnSpan="2" FontSize="16"/>
+        <TextBlock Text="Person:" Margin="10" Grid.Row="1" />
+        <TextBox Name="personTextBox" Margin="10" Grid.Row="1" Grid.Column="1" />
+        <TextBlock Margin="10" Grid.Row="2" Text="Period:" />
+        <ComboBox Name="periodComboBox" Margin="10" Grid.Row="2" Grid.Column="1">
+            <ComboBoxItem Content="Night" />
+            <ComboBoxItem Content="Morning" IsSelected="True"/>
+            <ComboBoxItem Content="Afternoon" />
+            <ComboBoxItem Content="Evening" />
+        </ComboBox>
+        <Button Name="greetButton" Margin="10" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Greet" IsEnabled="{Binding ElementName=personTextBox, Path=Text.Length}" Click="greetButton_Click" />
+    </Grid>
+</Window>

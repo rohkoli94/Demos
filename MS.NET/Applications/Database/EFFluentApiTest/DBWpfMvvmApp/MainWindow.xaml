@@ -1,0 +1,31 @@
+﻿<Window x:Class="DBWpfMvvmApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DBWpfMvvmApp"
+        mc:Ignorable="d"
+        Title="DBWpfMvvmApp" Height="300" Width="320" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <local:CustomerBinding/>
+    </Window.DataContext>
+    <StackPanel>
+        <StackPanel Margin="10">
+            <TextBlock Text="Customer ID"/>
+            <ComboBox ItemsSource="{Binding Customers}" DisplayMemberPath="CustomerId" SelectedItem="{Binding CurrentCustomer}"/>
+        </StackPanel>
+        <DockPanel Margin="5">
+            <TextBlock Margin="5" Text="Credit:" DockPanel.Dock="Left"/>
+            <Button Margin="5" Content="Save" Command="{Binding Save}" DockPanel.Dock="Right"/>
+            <TextBox Margin="5" Text="{Binding CurrentCustomer.Credit, UpdateSourceTrigger=PropertyChanged}"/>
+        </DockPanel>
+        <DataGrid Margin="10" MaxHeight="160" HorizontalAlignment="Center" IsReadOnly="True" AutoGenerateColumns="False" ItemsSource="{Binding CurrentCustomerInvoice}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate, StringFormat={}{0:dd-MMM-yyyy}}"/>
+                <DataGridTextColumn Header="Product No" Binding="{Binding ProductNo}"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}"/>
+                <DataGridTextColumn Header="Amount" Binding="{Binding Amount}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </StackPanel>
+</Window>

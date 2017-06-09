@@ -1,0 +1,116 @@
+cd MS.NET\Fundamentals\Platform
+subst s: .
+s:
+cd Concurrency
+np parallelfortest.cs
+csc parallelfortest.cs worker.cs
+parallelfortest.exe
+csc parallelfortest.cs worker.cs
+parallelfortest.exe
+csc parallelfortest.cs worker.cs
+parallelfortest.exe
+np parallellinqtest.cs
+csc parallellinqtest.cs worker.cs
+parallellinqtest.exe
+csc parallellinqtest.cs worker.cs
+parallellinqtest.exe
+copy parallellinqtest.exe z:\Shared\Testing
+cd..
+md Persistence
+cd Persistence
+np filestrmtest.cs
+csc filestrmtest.cs
+copy filestrmtest.cs data.txt
+np data.txt
+filestrmtest.exe data.txt
+np data.txt
+filestrmtest.exe data.txt
+np data.txt
+np memmapfiletest.cs
+csc memmapfiletest.cs
+np data.txt
+memmapfiletest.exe data.txt
+np data.txt
+np memmapfiletest.cs
+csc memmapfiletest.cs
+memmapfiletest.exe data.txt
+np data.txt
+memmapfiletest.exe data.txt
+np data.txt
+np binaryiotest.cs
+csc binaryiotest.cs
+binaryiotest.exe HDD 4999.95 20000
+binaryiotest.exe
+np product.dat
+copy binaryiotest.cs textiotest.cs
+np textiotest.cs
+csc textiotest.cs
+textiotest.exe HDD 4999.95 20000
+textiotest.exe 
+np product.txt
+dir product.*
+copy z:\Shared\hr.cs serhr.cs
+np serhr.cs
+csc serhr.cs /t:library
+np objsertest1.cs
+csc objsertest1.cs /r:serhr.dll
+objsertest1.exe Accounting
+objsertest1.exe 
+csc objsertest1.cs /r:serhr.dll
+objsertest1.exe 
+np objsertest2.cs
+csc objsertest2.cs /r:serhr.dll 
+objsertest2.exe
+csc objsertest2.cs /r:serhr.dll 
+objsertest2.exe
+csc objsertest2.cs /r:serhr.dll 
+objsertest2.exe
+csc objsertest2.cs /r:serhr.dll 
+objsertest2.exe
+np dept.dat
+np serhr.cs
+csc serhr.cs /t:library
+objsertest1.exe Accounting
+objsertest1.exe
+objsertest2.exe
+csc serhr.cs /t:library
+objsertest2.exe
+objsertest1.exe
+copy z:\Shared\hr.cs custserhr.cs
+np custserhr.cs
+csc custserhr.cs /t:library
+csc objsertest1.cs /r:custserhr.dll
+objsertest1.exe Accounting
+np dept.dat
+objsertest1.exe 
+csc objsertest2.cs /r:custserhr.dll
+objsertest2.exe 
+copy z:\Shared\hr.cs xmlserhr.cs
+csc xmlserhr.cs /t:library
+copy objsertest1.cs xmlsertest.cs
+np xmlsertest.cs
+csc xmlsertest.cs /r:xmlserhr.dll
+xmlsertest.exe Accounting
+xmlsertest.exe
+dir dept.*
+np dept.xml
+np xmlserhr.cs
+csc xmlserhr.cs /t:library
+xmlsertest.exe Accounting
+np dept.xml
+xmlsertest.exe
+csc xmlserhr.cs /t:library
+xmlsertest.exe Accounting
+xmlsertest.exe
+np dept.xml
+np linqtoxmltest.cs
+csc linqtoxmltest.cs
+linqtoxmltest.exe
+linqtoxmltest.exe 3
+linqtoxmltest.exe 4
+np objsertest1.cs
+np linqtoxmltest.cs
+csc linqtoxmltest.cs
+linqtoxmltest.exe
+csc linqtoxmltest.cs
+doskey /h >cmd15-04-2017.txt

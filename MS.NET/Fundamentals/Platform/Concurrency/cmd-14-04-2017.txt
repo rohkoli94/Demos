@@ -1,0 +1,80 @@
+cd MS.NET\Fundamentals\Runtime\
+subst s: .
+s:
+cd Interop
+dir
+cls
+dir
+cls
+np legacy\include\finance.idl
+copy rcwtest2.cs ccwtest.cs
+np ccwtest.cs
+np legacy\include\quadeq.idl
+csc /platform:x86 ccwtest.cs /l:FinanceLib.dll
+ccwtest.exe
+np legacy\aircargo.wsc
+np dynamicomtest.cs 
+csc /platform:x86 dynamicomtest.cs 
+dynamicomtest.exe
+cd ..
+e:
+subst /d s:
+cd ..
+md Platform
+cd Platform
+subst s:
+subst s: .
+s:
+md Concurrency
+cd Concurrency
+np worker.cs
+np threadtest.cs 
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 60
+csc threadtest.cs worker.cs
+threadtest.exe
+threadtest.exe 60
+csc threadtest.cs worker.cs
+threadtest.exe 60
+threadtest.exe 80
+np threadsynctest.cs
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+csc threadsynctest.cs worker.cs
+threadsynctest.exe
+np threadcoordtest.cs
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+csc threadcoordtest.cs worker.cs
+threadcoordtest.exe
+np threadlocaltest.cs
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+csc threadlocaltest.cs worker.cs
+threadlocaltest.exe
+np tasktest1.cs
+csc tasktest1.cs worker.cs
+tasktest1.exe
+csc tasktest1.cs worker.cs
+tasktest1.exe
+np tasktest2.cs
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+csc tasktest2.cs worker.cs
+tasktest2.exe
+doskey /h > cmd-14-04-2017.txt 

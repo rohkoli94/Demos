@@ -1,0 +1,54 @@
+    5  mkdir JSFTest
+    6  cd JSFTest/
+    7  mkdir WEB-INF
+    8  mkdir WEB-INF/classes
+    9  cp ~/Shared/web.xml WEB-INF/
+   10  vi WEB-INF/web.xml 
+   11  vi index.xhtml
+   12  ~/glassfish4/bin/asadmin start-domain
+   13  ~/glassfish4/bin/asadmin deploy .
+   14  cd WEB-INF/
+   15  cd classes/
+   16  cp ../../../../Desktop/SwingMVCTest/Document.java  .
+   17  cp ../../../../Desktop/SwingMVCTest/Visitor.java  .
+   18  vi Visitor.java 
+   19  javac -d . Visitor.java 
+   20  javac -d . Document.java 
+   21  vi VisitorManagedBean.java
+   22  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   23  javac -d . VisitorManagedBean.java
+   24  touch ../../.reload
+   25  vi ../../index.xhtml 
+   26  vi VisitorManagedBean.java
+   27  cd ..
+   28  mkdir RESTTest
+   29  cd RESTTest/
+   30  mkdir WEB-INF
+   31  cd WEB-INF/
+   32  mkdir classes
+   33  cp ~/Shared/web.xml .
+   34  cd ..
+   35  cp ~/Shared/web/clients/angular.js .
+   36  cp ~/Shared/web/clients/view.html .
+   37  cp ~/Shared/web/clients/submit.html .
+   38  vi WEB-INF/web.xml 
+   39  ~/glassfish4/bin/asadmin deploy .
+   40  vi submit.html 
+   41  cd WEB-INF/classes/
+   42  cp ../../../JSFTest/WEB-INF/classes/Document.java  .
+   43  vi Document.java 
+   44  javac -d . Document.java 
+   45  vi FeedbackInfo.java
+   46  javac -d . FeedbackInfo.java 
+   47  vi FeedbackRS.java
+   48  javac -d . FeedbackRS.java
+   49  touch ../../.reload
+   50  vi FeedbackRS.java
+   51  vi ../web.xml 
+   52  vi ../../view.html 
+   53  vi ../../submit.html 
+   54  vi FeedbackRS.java 
+   55  ~/glassfish4/bin/asadmin stop-domain
+   56  cd ..
+   57  cd Web/RESTTest/
+   58  history > cmd16-05-2017.txt

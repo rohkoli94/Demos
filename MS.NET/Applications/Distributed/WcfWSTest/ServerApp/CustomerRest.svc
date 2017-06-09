@@ -1,0 +1,1 @@
+﻿<%@ServiceHost Service="ServerApp.CustomerService" Factory="System.ServiceModel.Activation.WebServiceHostFactory" %>

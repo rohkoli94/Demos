@@ -1,0 +1,14 @@
+public class Greeter{
+
+	public String meet(String name, int age){
+		if(age < 20)
+			return "Hi " + name;
+		return "Hello " + name;
+	}
+
+	public String leave(String name){
+		return "Bye " + name;
+	}
+
+}
+

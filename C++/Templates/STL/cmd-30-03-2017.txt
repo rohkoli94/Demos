@@ -1,0 +1,129 @@
+    2  ls
+    3  vi generics.h
+    4  vi generictest3.cpp
+    5  c++ -o generictest3 generictest3.cpp
+    6  vi generictest3.cpp
+    7  c++ -o generictest3 generictest3.cpp
+    8  ./generictest3 
+    9  vi generictest3.cpp
+   10  c++ -o generictest3 generictest3.cpp
+   11  ./generictest3
+   12  vi generictest3.cpp
+   13  c++ -o generictest3 generictest3.cpp
+   14  vi generictest3.cpp
+   15  c++ -o generictest3 generictest3.cpp
+   16  ./generictest3
+   17  vi generictest3.cpp
+   18  cp generictest3.cpp generictest3v11.cpp
+   19  vi generictest3v11.cpp
+   20  c++ -o generictest3v11 generictest3v11.cpp 
+   21  c++11 -o generictest3v11 generictest3v11.cpp 
+   22  vi generictest3v11.cpp
+   23  c++11 -o generictest3v11 generictest3v11.cpp 
+   24  vi generictest3v11.cpp
+   25  c++11 -o generictest3v11 generictest3v11.cpp 
+   26  ./generictest3v11 
+   27  vi generictest3v11.cpp
+   28  c++11 -o generictest3v11 generictest3v11.cpp 
+   29  vi generictest3v11.cpp
+   30  c++11 -o generictest3v11 generictest3v11.cpp 
+   31  vi generictest3v11.cpp
+   32  c++11 -o generictest3v11 generictest3v11.cpp 
+   33  vi generictest3v11.cpp
+   34  c++11 -o generictest3v11 generictest3v11.cpp 
+   35  vi generictest3v11.cpp
+   36  c++11 -o generictest3v11 generictest3v11.cpp 
+   37  vi generictest3v11.cpp
+   38  c++11 -o generictest3v11 generictest3v11.cpp 
+   39  vi generictest3v11.cpp
+   40  c++11 -o generictest3v11 generictest3v11.cpp 
+   41  vi generictest3v11.cpp
+   42  c++11 -o generictest3v11 generictest3v11.cpp 
+   43  vi generictest3v11.cpp
+   44  mkdir STL 
+   45  cd STL
+   46  vi ../../Classes/newdelobjtest.cpp interval.h
+   47  ll
+   48  vi ../../Classes/newdelobjtest.cpp
+   49  cp ../../Classes/newdelobjtest.cpp interval.h
+   50  cp ~/Shared/C++/Classes/newdelobjtest.cpp ../../Classes/
+   51  vi vectortest.cpp
+   52  c++ -o vectortest vectortest.cpp
+   53  vi vectortest.cpp
+   54  c++ -o vectortest vectortest.cpp
+   55  ./vectortest 
+   56  cp vectortest.cpp listtest.cpp
+   57  vi listtest.cpp 
+   58  c++ -o listtest listtest.cpp
+   59  vi listtest.cpp 
+   60  c++ -o listtest listtest.cpp
+   61  ./listtest 
+   62  cp vectortest.cpp dequetest.cpp
+   63  vi dequetest.cpp 
+   64  c++ -o dequetest dequetest.cpp 
+   65  ./dequetest 
+   66  cp vectortest.cpp settest.cpp
+   67  vi settest.cpp 
+   68  c++ -o settest settest.cpp 
+   69  ./settest 
+   70  vi settest.cpp 
+   71  c++ -o settest settest.cpp 
+   72  vi settest.cpp 
+   73  c++ -o settest settest.cpp 
+   74  vi settest.cpp 
+   75  c++ -o settest settest.cpp
+   76  ./settest 
+   77  cp settest.cpp maptest.cpp
+   78  vi maptest.cpp 
+   79  c++ -o maptest maptest.cpp 
+   80  ./maptest 
+   81  vi maptest.cpp 
+   82  c++ -o maptest maptest.cpp 
+   83  ./maptest
+   84  cp vectortest.cpp stacktest.cpp
+   85  vi stacktest.cpp 
+   86  c++ -o stacktest stacktest.cpp
+   87  ./stacktest
+   88  vi stacktest.cpp 
+   89  c++ -o stacktest stacktest.cpp
+   90  ./stacktest
+   91  cp stacktest.cpp queue.cpp 
+   92  mv queue.cpp 
+   93  mv queue.cpp queuetest.cpp 
+   94  vi queuetest.cpp 
+   95  c++ -o queuetest queuetest.cpp 
+   96  ./queuetest 
+   97  vi queuetest.cpp 
+   98  c++ -o queuetest queuetest.cpp 
+   99  ./queuetest 
+  100  cp queuetest.cpp priorityquetest.cpp
+  101  vi priorityquetest.cpp 
+  102  c++ -o priorityquetest priorityquetest.cpp
+  103  ./priorityquetest 
+  104  vi priorityquetest.cpp 
+  105  c++ -o priorityquetest priorityquetest.cpp
+  106  ./priorityquetest 
+  107  vi priorityquetest.cpp 
+  108  c++ -o priorityquetest priorityquetest.cpp
+  109  vi priorityquetest.cpp
+  110  c++ -o priorityquetest priorityquetest.cpp
+  111  ./priorityquetest
+  112  cp vectortest.cpp sorttest.cpp
+  113  vi sorttest.cpp 
+  114  c++ -o sorttest sorttest.cpp 
+  115  ./sorttest 
+  116  vi sorttest.cpp 
+  117  c++ -o sorttest sorttest.cpp 
+  118  vi sorttest.cpp 
+  119  c++ -o sorttest sorttest.cpp 
+  120  ./sorttest 
+  121  cp sorttest.cpp copytest.cpp
+  122  vi copytest.cpp 
+  123  c++ -o copytest copytest.cpp 
+  124  vi copytest.cpp 
+  125  c++ -o copytest copytest.cpp 
+  126  ./copytest 
+  127  vi copytest.cpp 
+  128  c++ -o copytest copytest.cpp 
+  129  ./copytest 
+  130  history > cmd-30-03-2017.txt

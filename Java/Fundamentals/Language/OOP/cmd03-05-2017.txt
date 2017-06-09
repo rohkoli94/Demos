@@ -1,0 +1,92 @@
+    1  clear
+    2  cd Java/Fundamentals/Language/Basics/
+    3  clear
+    4  vi SwitchStringTest.java
+    5  javac SwitchStringTest.java
+    6  java SwitchStringTest
+    7  java SwitchStringTest 7
+    8  cp SwitchStringTest.java SwitchEnumTest.java
+    9  vi SwitchEnumTest.java 
+   10  javac SwitchEnumTest.java 
+   11  java SwitchEnumTest
+   12  java SwitchEnumTest 7
+   13  javap -p RoomType
+   14  cd ..
+   15  mkdir OOP 
+   16  cd OOP/
+   17  mkdir payroll
+   18  vi payroll/Employee.java
+   19  javac payroll/Employee.java
+   20  vi payroll/Employee.java
+   21  javac payroll/Employee.java 
+   22  vi payroll/SalesPerson.java
+   23  vi payroll/Employee.java
+   24  javac payroll/Employee.java 
+   25  vi payroll/SalesPerson.java
+   26  javac payroll/SalesPerson.java
+   27  vi SubclassTest1.java
+   28  javac SubclassTest1.java 
+   29  vi SubclassTest1.java
+   30  javac SubclassTest1.java 
+   31  vi payroll/Employee.java
+   32  vi SubclassTest1.java
+   33  javac SubclassTest1.java 
+   34  java SubclassTest
+   35  rm SubclassTest.class 
+   36  vi SubclassTest1.java
+   37  javac SubclassTest1.java 
+   38  java SubclassTest1
+   39  vi SubclassTest2.java 
+   40  javac SubclassTest2.java 
+   41  java SubclassTest2
+   42  vi SubclassTest2.java 
+   43  javac SubclassTest2.java 
+   44  vi SubclassTest2.java 
+   45  javac SubclassTest2.java 
+   46  vi SubclassTest2.java 
+   47  javac SubclassTest2.java 
+   48  java SubclassTest2
+   49  vi SubclassTest2.java 
+   50  javac SubclassTest2.java 
+   51  java SubclassTest2
+   52  javap java.lang.Object
+   53  vi Interval.java
+   54  javac Interval.java 
+   55  vi Interval.java
+   56  javac Interval.java 
+   57  vi ObjEqualityTest.java
+   58  javac ObjEqualityTest.java 
+   59  java ObjEqualityTest
+   60  vi Interval.java
+   61  javac Interval.java 
+   62  java ObjEqualityTest
+   63  vi ObjEqualityTest.java
+   64  javac ObjEqualityTest.java 
+   65  java ObjEqualityTest
+   66  vi ObjEqualityTest.java
+   67  javac ObjEqualityTest.java 
+   68  java ObjEqualityTest
+   69  vi ObjEqualityTest.java
+   70  vi Interval.java
+   71  javac Interval.java 
+   72  java ObjEqualityTest
+   73  mkdir src
+   74  vi src/InsufficientFundsException.java
+   75  javac -d . src/InsufficientFundsException.java 
+   76  vi src/IllegalTransferException.java
+   77  javac -d . src/IllegalTransferException.java 
+   78  vi src/Account.java
+   79  javac -d . src/Account.java
+   80  vi src/Account.java
+   81  javac -d . src/Account.java
+   82  vi src/CurrentAccount.java
+   83  javac -d . src/CurrentAccount.java
+   84  vi src/SavingsAccount.java
+   85  javac -d . src/SavingsAccount.java
+   86  vi src/Banker.java
+   87  javac -d . src/Banker.java
+   88  vi AbstractClassTest.java
+   89  javac AbstractClassTest.java
+   90  java AbstractClassTest 3000
+   91  java AbstractClassTest 23000
+   92  history > cmd03-05-2017.txt

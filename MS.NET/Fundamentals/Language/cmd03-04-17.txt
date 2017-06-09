@@ -1,0 +1,36 @@
+dir
+cls
+md MS.NET
+cd MS.NET
+md Fundamentals
+cd Fundamentals
+md Language
+cd Language
+subst s: .
+s:
+notepad hello1.il
+ilasm hello1.il
+dir
+hello1
+ilasm hello1.il
+hello1
+ilasm hello1.il
+hello1
+np hello2.cs
+csc hello2.cs
+dir
+hello2.exe
+csc hello2.cs
+ildasm hello2.exe
+np greeter.cs
+csc greeter.cs
+csc greeter.cs /target:library
+dir
+np greeterapp.vb
+vbc greeterapp.vb
+vbc greeterapp.vb /reference:greeter.dll
+dir
+greeterapp.exe
+ildasm greeter.dll
+ildasm greeterapp.exe
+doskey /h > cmd03-04-17.txt

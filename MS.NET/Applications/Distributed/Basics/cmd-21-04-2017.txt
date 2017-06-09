@@ -1,0 +1,40 @@
+cd MS.NET\Applications
+md Distributed
+cd Distributed
+subst s: .
+s:
+md Basics
+cd Basics
+np strmsocktest.cs
+csc strmsocktest.cs
+start strmsocktest.exe
+strmsocktest.exe
+np tcpclienttest.cs
+csc tcpclienttest.cs
+tcpclienttest.exe 
+start strmsocktest.exe
+tcpclienttest.exe
+np tcplistenertest.cs
+csc tcplistenertest.cs
+start tcplistenertest.exe
+tcpclienttest.exe 
+csc tcplistenertest.cs
+start tcplistenertest.exe
+tcpclienttest.exe 
+np tcplistenertest.cs
+csc tcplistenertest.cs
+start tcplistenertest.exe
+tcpclienttest.exe
+copy strmsocktest.cs dgrmsocktest.cs
+np dgrmsocktest.cs
+csc dgrmsocktest.cs
+dgrmsocktest.exe
+start dgrmsocktest.exe
+copy tcpclienttest.cs udpclienttest.cs
+np udpclienttest.cs
+csc udpclienttest.cs
+udpclienttest.exe
+np webclienttest.cs
+csc webclienttest.cs
+webclienttest.exe
+doskey /h > cmd-21-04-2017.txt

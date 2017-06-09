@@ -1,0 +1,131 @@
+cls
+cd MS.NET\Fundamentals\Runtime\
+cls
+subst s: .
+s:
+dir
+cd Reflection
+cls
+dir
+cls
+subst /d s:
+s:
+cls
+e:
+cd Reflection
+cls
+subst s: .
+s:
+cls
+dir
+cls
+dir
+cls
+dir
+e:
+subst /d s:
+cd ..
+subst s: .
+s:
+cd Reflection
+cls
+copy earlybindtest.cs latebindtest.cs
+np latebindtest.cs
+csc latebindtest.cs
+latebindtest.exe 500000 Finance.EducationLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.HomeLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.PersonalLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.PersonalLoan,simplefin GetInterestRateForEmployees
+latebindtest.exe 500000 Finance.BusinessLoan,simplefin GetInterestRate
+latebindtest.exe 500000 Finance.BusinessLoan,simplefin RateOfInterest
+np earlybindtest.cs 
+np latebindtest.cs
+latebindtest.exe 500000 Finance.BusinessLoan RateOfInterest
+latebindtest.exe 500000 Finance.BusinessLoan,simplefin RateOfInterest
+copy simplefin.cs attribfin.cs
+np attribfin.cs
+csc /t:library attribfin.cs
+np attribfin.cs
+csc /t:library attribfin.cs
+ildasm attribfin.dll
+copy earlybindtest.cs custattrtest.cs
+ren custattrtest.cs custattrtest1.cs
+np custattrtest1.cs
+csc custattrtest1.cs /r:attribfin.dll
+custattrtest1.exe 500000 Finance.EducationLoan,attribfin
+custattrtest1.exe 500000 Finance.HomeLoan,attribfin
+custattrtest1.exe 500000
+csc /t:library attribfin.cs
+np attribfin.cs
+csc /t:library attribfin.cs
+ildasm attribfin.dll
+copy latebindtest.cs custattrtest2.cs
+np custattrtest2.cs
+csc custattrtest2.cs /r:attribfin.dll
+custattrtest2.exe 500000 Finance.HomeLoan,attribfin GetInterestRate 
+custattrtest2.exe 500000 Finance.PersonalLoan,attribfin GetInterestRate 
+custattrtest2.exe 500000 Finance.PersonalLoan,attribfin GetInterestRateForEmployees
+custattrtest2.exe 500000 Finance.EducationLoan,attribfin GetInterestRate 
+objaccesstest.exe
+del payroll.dll
+objaccesstest.exe
+ildasm objaccesstest.exe
+csc /t:library payroll.cs
+objaccesstest.exe
+cd ..
+Reflection\objaccesstest.exe
+cd Reflection
+ildasm objaccesstest.exe
+gacutil /i payroll.dll
+sn -k met.snk
+np payroll.cs
+csc /keyfile:met.snk /t:library payroll.cs
+sn -T payroll.dll
+sn -T simplefin.dll
+csc objaccesstest.cs /r:payroll.dll interval.cs
+objaccesstest.exe
+ildasm objaccesstest.exe
+gacutil /i payroll.dll
+del payroll.dll
+objaccesstest.exe
+gacutil /l payroll
+gacutil /u payroll
+objaccesstest.exe
+csc /keyfile:met.snk /t:library payroll.cs
+objaccesstest.exe
+np asmloadtest.cs
+csc asmloadtest.cs
+asmloadtest.exe 
+copy asmloadtest.cs appdomtest.cs
+np appdomtest.cs
+csc appdomtest.cs
+appdomtest.exe
+csc appdomtest.cs
+appdomtest.exe
+csc appdomtest.cs
+appdomtest.exe
+np greeters.cs
+np dynamicobjtest.cs
+csc dynamicobjtest.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+dynamicobjtest.exe Greeters.FormalGreeter
+dynamicobjtest.exe Greeters.HouseGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe
+dynamicobjtest.exe Greeters.CasualGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.HouseGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+csc dynamicobjtest.cs greeters.cs
+dynamicobjtest.exe Greeters.CasualGreeter
+sn
+ildasm objaccesstest.exe
+np latebindtest.cs
+doskey /h > cmd12-04-17.txt

@@ -1,0 +1,46 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+md Basics
+cd Basics
+np paramarraytest.cs
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+paramarraytest.exe
+csc paramarraytest.cs
+np optparamtest.cs
+csc optparamtest.cs
+optparamtest.exe 75000
+optparamtest.exe 
+csc optparamtest.cs
+optparamtest.exe 75000
+optparamtest.exe 
+optparamtest.exe 5OOOO
+np paramarraytest.cs
+ildasm paramarraytest.exe
+np structtypetest.cs
+csc structtypetest.cs
+structtypetest.exe
+csc structtypetest.cs
+structtypetest.exe
+copy structtypetest.cs classtypetest.cs
+np classtypetest.cs
+csc classtypetest.cs
+classtypetest.exe
+ildasm structtypetest.exe
+ildasm classtypetest.exe
+np structtypetest.cs
+csc structtypetest.cs
+np classtypetest.cs
+csc classtypetest.cs
+copy structtypetest.cs pointertypetest.cs
+np pointertypetest.cs
+csc pointertypetest.cs
+csc /unsafe pointertypetest.cs
+pointertypetest.exe
+ildasm pointertypetest.exe
+ildasm structtypetest.exe
+doskey /h > cmd04-04-17.txt

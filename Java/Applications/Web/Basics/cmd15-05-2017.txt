@@ -1,0 +1,65 @@
+    1  mkdir Web
+    2  cd Web/
+    3  mkdir Basics
+    4  cd Basics/
+    5  mkdir WEB-INF
+    6  mkdir WEB-INF/classes
+    7  cp ~/Shared/web.xml WEB-INF/
+    8  vi welcome.html
+    9  ~/glassfish4/bin/asadmin start-domain
+   10  ~/glassfish4/bin/asadmin deploy .
+   11  vi WEB-INF/web.xml 
+   12  vi WEB-INF/web.xml undeploy Basics
+   13  ~/glassfish4/bin/asadmin undeploy Basics
+   14  ~/glassfish4/bin/asadmin deploy .
+   15  cd WEB-INF/classes/
+   16  mkdir basicwebapp
+   17  vi basicwebapp/GreetingServlet.java
+   18  javac basicwebapp/GreetingServlet.java
+   19  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   20  javac basicwebapp/GreetingServlet.java
+   21  vi ../web.xml 
+   22  touch ../../.reload
+   23  cp ../../welcome.html ../../formpost.html
+   24  vi ../../formpost.html 
+   25  vi basicwebapp/StateServlet.java
+   26  javac basicwebapp/StateServlet.java
+   27  vi basicwebapp/StateServlet.java
+   28  javac basicwebapp/StateServlet.java
+   29  touch ../../.reload
+   30  vi basicwebapp/StateServlet.java
+   31  javac basicwebapp/StateServlet.java
+   32  touch ../../.reload
+   33  vi basicwebapp/StateServlet.java
+   34  cp ../../welcome.html ../../beantest1.jsp
+   35  vi ../../beantest1.jsp 
+   36  vi basicwebapp/CounterBean.java
+   37  javac basicwebapp/CounterBean.java
+   38  touch ../../.reload
+   39  vi ../../beantest1.jsp 
+   40  vi basicwebapp/FormBean.java
+   41  javac basicwebapp/FormBean.java
+   42  touch ../../.reload
+   43  vi ../../beantest2.jspx
+   44  vi basicwebapp/ClockTag.java
+   45  javac basicwebapp/ClockTag.java
+   46  vi basicwebapp/ClockTag.java
+   47  javac basicwebapp/ClockTag.java
+   48  touch ../../.reload
+   49  cp ~/Shared/taglib.tld ../basicwebapp.tld
+   50  vi ../basicwebapp.tld 
+   51  touch ../../.reload
+   52  cp ../../welcome.html ../../tagtest1.jsp
+   53  vi ../../tagtest1.jsp 
+   54  vi basicwebapp/LottoTag.java
+   55  javac basicwebapp/LottoTag.java
+   56  vi basicwebapp/LottoTag.java
+   57  javac basicwebapp/LottoTag.java
+   58  vi basicwebapp/LottoTag.java
+   59  javac basicwebapp/LottoTag.java
+   60  vi ../basicwebapp.tld 
+   61  touch ../../.reload
+   62  cp ../../beantest2.jspx ../../tagtest2.jspx
+   63  vi ../../tagtest2.jspx 
+   64  cd ..
+   65  history > cmd15-05-2017.txt

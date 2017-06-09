@@ -1,0 +1,68 @@
+cd MS.NET\Fundamentals\Runtime\
+subst s: .
+s:
+cd Reflection
+dir
+cls
+cd ..
+e:
+s:
+md Interop
+cd Interop
+cd legacy
+cd x86
+setup.bat
+cd ..
+dir
+dir legacy\include\box.h
+np legacy\include\box.h
+np ijwbox.cpp
+cl /LD /clr ijwbox.cpp legacy\x86\box.obj
+dir
+np mixmodeasmtest.cs
+csc mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+ildasm mixmodeasmtest.exe
+ildasm ijwbox.dll
+cls
+csc /platform:x86 mixmodeasmtest.cs /r:ijwbox.dll
+mixmodeasmtest.exe
+np legacy\include\asset.h
+dumpbin /exports legacy\x86\asset.dll
+np legacy\include\asset.h
+np pinvoketest1.cs 
+np legacy\include\hashenc.h
+csc /platform:x86 pinvoketest1.cs 
+pinvoketest1.exe
+csc /platform:x86 pinvoketest1.cs 
+pinvoketest1.exe
+np legacy\include\hashenc.h
+np pinvoketest2.cs
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe
+csc /platform:x86 pinvoketest2.cs
+pinvoketest2.exe
+np legacy\include\invest.h
+np pinvoketest3.cs
+csc /platform:x86 pinvoketest3.cs
+pinvoketest3.exe
+csc /platform:x86 pinvoketest3.cs
+pinvoketest3.exe
+uuidgen
+tlbimp legacy\x86\quadeq.exe
+ildasm QuadEq.dll
+np rcwtest1.cs 
+ildasm QuadEq.dll
+csc /platform:x86 rcwtest1.cs /r:QuadEq.dll
+rcwtest1.exe
+np legacy\include\finance.idl
+tlbimp legacy\x86\finance.dll
+ildasm FinanceLib.dll
+np rcwtest2.cs
+csc rcwtest2.cs /link:FinanceLib.dll
+csc /platform:x86 rcwtest2.cs /link:FinanceLib.dll
+rcwtest2.exe
+csc /platform:x86 rcwtest2.cs /link:FinanceLib.dll
+rcwtest2.exe
+np rcwtest1.cs
+doskey /h > cmd-13-04-2017.txt 

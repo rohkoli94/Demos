@@ -1,0 +1,113 @@
+    1  clear
+    2  cd Java/Fundamentals/Runtime/
+    3  ls
+    4  cd Native/
+    5  clear
+    6  vi ArrayAccessTest.java
+    7  javac -h . ArrayAccessTest.java 
+    8  vi *.h
+    9  ll *.h
+   10  vi ArrayHelper.h 
+   11  vi arrh.cpp
+   12  export CPATH=/usr/java/jdk1.8.0_121/include/:/usr/java/jdk1.8.0_121/include/linux/
+   13  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   14  vi arrh.cpp
+   15  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   16  export LD_LIBRARY_PATH=.
+   17  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   18  vi ArrayAccessTest.java
+   19  javac -h . ArrayAccessTest.java 
+   20  vi ArrayHelper.h 
+   21  vi arrh.cpp
+   22  c++ -shared -fPIC -o libarrh.so arrh.cpp 
+   23  java ArrayAccessTest 1.2 2.3 3.4 4.5
+   24  java ArrayAccessTest 1.0 2.0 3.0
+   25  mv ~/Shared/box4c.o . 
+   26  objdump -d -M intel box4c.o 
+   27  vi ObjectAccessTest.java
+   28  javac -h . ObjectAccessTest.java 
+   29  vi LegacyBox.h 
+   30  javap -p -s LegacyBox
+   31  vi lbox.cpp
+   32  c++ -shared -fPIC -o liblbox.so lbox.cpp box4c.o 
+   33  java ObjectAccessTest 12 8 7 1 
+   34  vi ObjectAccessTest.java
+   35  javac -h . ObjectAccessTest.java 
+   36  javap -p -s LegacyBox
+   37  vi lbox.cpp
+   38  c++ -shared -fPIC -o liblbox.so lbox.cpp box4c.o 
+   39  java ObjectAccessTest 12 8 7 1 
+   40  java ObjectAccessTest 12 8 7 4
+   41  cd ..
+   42  mkdir Platform
+   43  cd Platform/
+   44  mkdir Concurrency
+   45  cd Concurrency/
+   46  cp ~/Shared/threads/Worker.java .
+   47  vi Worker.java 
+   48  javac Worker.java 
+   49  vi ThreadTest.java 
+   50  javac ThreadTest.java 
+   51  java ThreadTest
+   52  vi ThreadTest.java 
+   53  javac ThreadTest.java 
+   54  java ThreadTest
+   55  java ThreadTest 60
+   56  vi ThreadTest.java 
+   57  javac ThreadTest.java 
+   58  java ThreadTest 70
+   59  java ThreadTest 90
+   60  cp ~/Shared/threads/ThreadSyncTest.java .
+   61  vi ThreadSyncTest.java 
+   62  javac ThreadSyncTest.java 
+   63  java ThreadSyncTest
+   64  vi ThreadSyncTest.java 
+   65  javac ThreadSyncTest.java 
+   66  java ThreadSyncTest
+   67  vi ThreadSyncTest.java 
+   68  javac ThreadSyncTest.java 
+   69  java ThreadSyncTest
+   70  vi ThreadSyncTest.java 
+   71  javac ThreadSyncTest.java 
+   72  java ThreadSyncTest
+   73  cp ~/Shared/threads/ThreadCoordTest.java .
+   74  vi ThreadCoordTest.java 
+   75  javac ThreadCoordTest.java 
+   76  java ThreadCoordTest
+   77  vi ThreadCoordTest.java 
+   78  javac ThreadCoordTest.java 
+   79  java ThreadCoordTest
+   80  vi ThreadCoordTest.java 
+   81  javac ThreadCoordTest.java 
+   82  java ThreadCoordTest
+   83  vi ThreadCoordTest.java 
+   84  javac ThreadCoordTest.java 
+   85  java ThreadCoordTest
+   86  vi ThreadCoordTest.java 
+   87  cp ~/Shared/threads/ThreadLocalTest.java .
+   88  vi ThreadLocalTest.java 
+   89  javac ThreadLocalTest.java 
+   90  java ThreadLocalTest
+   91  vi ThreadLocalTest.java 
+   92  javac ThreadLocalTest.java 
+   93  java ThreadLocalTest
+   94  vi ThreadLocalTest.java 
+   95  javac ThreadLocalTest.java 
+   96  java ThreadLocalTest
+   97  vi ThreadPoolTest1.java
+   98  vi ExecutorTest1.java
+   99  javac ExecutorTest1.java
+  100  java ExecutorTest1
+  101  vi ExecutorTest1.java
+  102  javac ExecutorTest1.java
+  103  java ExecutorTest1
+  104  vi ExecutorTest2.java 
+  105  javac ExecutorTest2.java 
+  106  java ExecutorTest2
+  107  vi ExecutorTest2.java 
+  108  javac ExecutorTest2.java 
+  109  java ExecutorTest2
+  110  history > cmd09-05-2017.txt
+  111  javap java.lang.Callable
+  112  javap java.util.concurrent.Callable
+  113  history > cmd09-05-2017.txt

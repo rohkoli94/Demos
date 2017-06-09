@@ -1,0 +1,132 @@
+    3  mkdir Applications
+    4  cd Applications/
+    5  mkdir Desktop
+    6  cd Desktop/
+    7  mkdir Basics
+    8  cd Basics/
+    9  vi AWTPlainTest.java
+   10  javac AWTPlainTest.java
+   11  java AWTPlainTest
+   12  vi AWTPlainTest.java
+   13  javac AWTPlainTest.java
+   14  java AWTPlainTest
+   15  cp AWTPlainTest.java AWTChildTest.java
+   16  vi AWTChildTest.java 
+   17  javac AWTPlainTest.java
+   18  javac AWTChildTest.java
+   19  java AWTChildTest
+   20  vi AWTChildTest.java 
+   21  javac AWTChildTest.java
+   22  java AWTChildTest
+   23  vi AWTChildTest.java 
+   24  javac AWTChildTest.java
+   25  java AWTChildTest
+   26  vi AWTChildTest.java 
+   27  javac AWTChildTest.java
+   28  java AWTChildTest
+   29  vi AWTChildTest.java 
+   30  javac AWTChildTest.java
+   31  java AWTChildTest
+   32  vi AWTChildTest.java 
+   33  javac AWTChildTest.java
+   34  java AWTChildTest
+   35  cp AWTPlainTest.java AWTPaintTest.java
+   36  vi AWTPaintTest.java 
+   37  javap java.awt.Graphics
+   38  vi AWTPaintTest.java 
+   39  javac AWTPaintTest.java 
+   40  java AWTPaintTest
+   41  vi AWTPaintTest.java 
+   42  javac AWTPaintTest.java 
+   43  java AWTPaintTest
+   44  vi AWTPaintTest.java 
+   45  javac AWTPaintTest.java 
+   46  java AWTPaintTest
+   47  vi AWTPaintTest.java 
+   48  javac AWTPaintTest.java 
+   49  java AWTPaintTest
+   50  vi AWTPaintTest.java 
+   51  javac AWTPaintTest.java 
+   52  java AWTPaintTest
+   53  vi SwingPlainTest.java
+   54  javac SwingPlainTest.java
+   55  java SwingPlainTest
+   56  vi SwingPlainTest.java
+   57  javac SwingPlainTest.java
+   58  java SwingPlainTest
+   59  cp SwingPlainTest.java SwingChildTest.java
+   60  vi SwingChildTest.java 
+   61  javac SwingChildTest.java 
+   62  java SwingChildTest
+   63  vi SwingChildTest.java 
+   64  javap javax.swing.UIManager
+   65  vi SwingChildTest.java 
+   66  javac SwingChildTest.java 
+   67  java SwingChildTest
+   68  cp SwingPlainTest.java SwingPaintTest.java
+   69  vi SwingPaintTest.java 
+   70  javac SwingPaintTest.java 
+   71  java SwingPaintTest
+   72  cp SwingPaintTest*.class ~/Shared/Testing/
+   73  java SwingPaintTest
+   74  vi SwingPaintTest.java 
+   75  javac SwingPaintTest.java 
+   76  java SwingPaintTest
+   77  vi SwingPaintTest.java 
+   78  javac SwingPaintTest.java 
+   79  java SwingPaintTest
+   80  cp SwingPaintTest*.class ~/Shared/Testing/
+   81  vi SwingPaintTest.java 
+   82  javac SwingPaintTest.java 
+   83  vi SwingPaintTest.java 
+   84  javac SwingPaintTest.java 
+   85  java SwingPaintTest
+   86  vi SwingPaintTest.java
+   87  javac SwingPaintTest.java 
+   88  java SwingPaintTest
+   89  cd ..
+   90  mkdir SwingMVCTest
+   91  cd SwingMVCTest/
+   92  mv ~/Shared/Document.java .
+   93  vi Document.java 
+   94  javac -d . Document.java 
+   95  vi Visitor.java
+   96  javac -d . Visitor.java
+   97  vi VisitorModel.java
+   98  javac -d . VisitorModel.java
+   99  vi VisitorView.java
+  100  javac -d . VisitorView.java
+  101  vi VisitorController.java
+  102  javac -d . VisitorController.java
+  103  java VisitorController
+  104  java app.VisitorController
+  105  vi ~/Documents/visitors.xml 
+  106  vi manifest.mf
+  107  jar cfm visitorapp.jar manifest.mf app
+  108  java -jar visitorapp.jar 
+  109  cp visitorapp.jar ~/Shared/Testing/
+  110  cd .
+  111  cd ..
+  112  history > cmd11-05-2017.txt
+  113  vi SwingMVCTest/Document.java 
+  114  cd SwingMVCTest/
+  115  vi VisitorView.java 
+  116  javac -d . VisitorView.java 
+  117  vi VisitorView.java 
+  118  javac -d . VisitorView.java 
+  119  vi VisitorView.java 
+  120  javac -d . VisitorView.java 
+  121  vi VisitorView.java 
+  122  javac -d . VisitorView.java 
+  123  java app.VisitorController
+  124  vi VisitorView.java 
+  125  javac -d . VisitorView.java 
+  126  java app.VisitorController
+  127  cd ../../../Fundamentals/Platform/Concurrency/
+  128  java ForkJoinPoolTest
+  129  java ParallelStreamTest
+  130  clear
+  131  cd ..
+  132  cd ../../Applications/Desktop/
+  133  ls
+  134  history > cmd11-05-2017-I.txt 

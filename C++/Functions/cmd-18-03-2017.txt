@@ -1,0 +1,70 @@
+    1  cd C++/Functions/
+    2  vi defargtest.cpp
+    3  c++ -o defargtest defargtest.cpp 
+    4  ./defargtest 
+    5  vi defargtest.cpp
+    6  cp defargtest.cpp funcovldtest.cpp
+    7  vi funcovldtest.cpp 
+    8  c++ -o funcovldtest funcovldtest.cpp 
+    9  ./funcovldtest 
+   10  ./defargtest 
+   11  vi funcovldtest.cpp 
+   12  c++ -o funcovldtest funcovldtest.cpp 
+   13  ./funcovldtest 
+   14  vi funcovldtest.cpp 
+   15  vi reftypetest.cpp
+   16  c++ -c reftypetest.cpp 
+   17  objdump -d -M intel reftypetest.o 
+   18  vi reftypetest.cpp
+   19  c++ -o reftypetest reftypetest.cpp 
+   20  ./reftypetest 
+   21  vi throwtest.cpp
+   22  c++ -o throwtest throwtest.cpp 
+   23  ./throwtest 
+   24  vi throwtest.cpp
+   25  c++ -o throwtest throwtest.cpp 
+   26  ./throwtest 
+   27  vi throwtest.cpp
+   28  c++ -o throwtest throwtest.cpp 
+   29  ./throwtest 
+   30  cp throwtest.cpp catchtest.cpp
+   31  vi catchtest.cpp 
+   32  mv catchtest.cpp catchtest1.cpp 
+   33  vi catchtest1.cpp 
+   34  c++ -o catchtest1 catchtest1.cpp 
+   35  ./catchtest1 
+   36  vi catchtest1.cpp 
+   37  c++ -o catchtest1 catchtest1.cpp 
+   38  ./catchtest1 
+   39  cp throwtest.cpp catchtest2.cpp
+   40  vi catchtest2.cpp 
+   41  c++ -o catchtest2 catchtest2.cpp 
+   42  ./catchtest2 
+   43  vi catchtest2.cpp 
+   44  ./catchtest1 
+   45  vi catchtest1.cpp 
+   46  c++ -o catchtest1 catchtest1.cpp 
+   47  vi catchtest2.cpp 
+   48  vi catchtest1.cpp 
+   49  c++ -o catchtest1 catchtest1.cpp 
+   50  ./catchtest1
+   51  vi catchtest1.cpp 
+   52  c++ -o catchtest1 catchtest1.cpp 
+   53  ./catchtest1
+   54  vi catchtest1.cpp 
+   55  c++ -o catchtest1 catchtest1.cpp 
+   56  ./catchtest1
+   57  vi catchtest1.cpp 
+   58  c++ -o catchtest1 catchtest1.cpp 
+   59  vi catchtest1.cpp 
+   60  c++ -o catchtest1 catchtest1.cpp 
+   61  vi catchtest1.cpp 
+   62  c++ -o catchtest1 catchtest1.cpp 
+   63  vi catchtest1.cpp 
+   64  c++ -o catchtest1 catchtest1.cpp 
+   65  ./catchtest1
+   66  vi catchtest1.cpp 
+   67  c++ -o catchtest1 catchtest1.cpp 
+   68  ./catchtest1
+   69  vi catchtest1.cpp 
+   70  history > cmd-18-03-2017.txt 

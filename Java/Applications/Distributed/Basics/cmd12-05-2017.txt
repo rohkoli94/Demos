@@ -1,0 +1,43 @@
+   10  mkdir Distributed 
+   11  cd Distributed/
+   12  mkdir Basics
+   13  cd Basics/
+   14  vi ServerSocketTest.java
+   15  javac ServerSocketTest.java
+   16  java ServerSocketTest &
+   17  java ServerSocketTest 
+   18  telnet localhost 2055
+   19  ps 
+   20  kill 3513
+   21  vi ServerSocketTest.java 
+   22  javac ServerSocketTest.java
+   23  java ServerSocketTest &
+   24  telnet localhost 2055
+   25  ps
+   26  kill 3675
+   27  vi ServerSocketTest.java 
+   28  javac ServerSocketTest.java
+   29  java ServerSocketTest &
+   30  telnet localhost 2055
+   31  vi SocketTest.java
+   32  javac SocketTest.java
+   33  java SocketTest 
+   34  ps
+   35  kill 3762
+   36  java SocketTest 
+   37  vi DatagramSocketTest.java
+   38  javac DatagramSocketTest.java
+   39  java DatagramSocketTest &
+   40  vi MulticastSocketTest.java
+   41  javac MulticastSocketTest.java
+   42  java MulticastSocketTest 
+   43  ps 
+   44  kill 4262
+   45  mv ~/Shared/stock.php /SoftDev/www/html/
+   46  vi URLTest.java
+   47  javac URLTest.java
+   48  java URLTest MSFT
+   49  java URLTest ORCL
+   50  java URLTest SUNW
+   51  vi ServerSocketTest.java 
+   52  history > cmd12-05-2017.txt

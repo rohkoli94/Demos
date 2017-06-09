@@ -1,0 +1,64 @@
+cd MS.NET\Fundamentals
+cd Language
+subst s: .
+s:
+cd OOP
+np payroll1.cs
+np derivedclasstest1.cs
+csc derivedclasstest1.cs payroll1.cs
+derivedclasstest1.exe
+csc /t:library payroll1.cs
+csc derivedclasstest1.cs /r:payroll1.dll
+csc derivedclasstest1.cs payroll1.cs
+ildasm derivedclasstest1.exe
+csc derivedclasstest1.cs /r:payroll1.dll
+ildasm derivedclasstest1.exe
+derivedclasstest1.exe
+csc /t:library payroll1.cs
+csc derivedclasstest1.cs /r:payroll1.dll
+derivedclasstest1.exe
+csc derivedclasstest1.cs /r:payroll1.dll
+derivedclasstest1.exe
+copy payroll1.cs payroll2.cs
+np payroll2.cs
+csc /t:library payroll2.cs
+csc derivedclasstest1.cs /r:payroll2.dll
+derivedclasstest1.exe
+csc /t:library payroll2.cs
+derivedclasstest1.exe
+np derivedclasstest2.cs
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+csc derivedclasstest2.cs /r:payroll2.dll
+derivedclasstest2.exe
+copy ..\Basics\propertytest.cs interval.cs
+np interval.cs
+np objequalitytest.cs
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+objequalitytest.exe
+np objequalitytest.cs
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+np interval.cs
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+csc objequalitytest.cs interval.cs
+objequalitytest.exe
+np banking1.cs
+csc /t:library banking1.cs
+doskey /h > cmd06-04-17.txt

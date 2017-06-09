@@ -1,0 +1,51 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+cd OOP
+np abstractclasstest.cs
+csc abstractclasstest.cs /r:banking1.dll
+abstractclasstest.exe
+np banking1.cs
+copy banking1.cs banking2.cs
+np banking2.cs
+csc /t:library banking2.cs
+np interfacetest1.cs
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+csc /t:library banking2.cs
+csc interfacetest1.cs /r:banking2.dll
+interfacetest1.exe
+np interfacetest2.cs
+csc interfacetest2.cs /r:payroll2.dll
+interfacetest2.exe
+csc interfacetest2.cs /r:payroll2.dll
+np gctest.cs
+csc gctest.cs
+gctest.exe
+csc /d:TESTING gctest.cs
+gctest.exe
+csc /d:TESTING gctest.cs
+gctest.exe
+csc /d:TESTING gctest.cs
+gctest.exe
+csc /d:TESTING gctest.cs
+gctest.exe
+csc /d:TESTING gctest.cs
+gctest.exe
+cls
+gctest.exe 4
+gctest.exe abcd
+csc /d:TESTING gctest.cs
+gctest.exe 4
+gctest.exe abcd
+csc /d:TESTING gctest.cs
+gctest.exe 4
+gctest.exe abcd
+ildasm gctest.exe
+np interfacetest2.cs
+csc interfacetest2.cs
+csc interfacetest2.cs /r:payroll2.dll
+csc /d:TESTING gctest.cs
+doskey /h > cmd07-04-17.txt

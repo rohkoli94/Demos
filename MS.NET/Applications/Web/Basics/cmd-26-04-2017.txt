@@ -1,0 +1,37 @@
+cd MS.NET\Applications
+subst s: .
+s:
+dir
+e:
+subst /d s:
+md Web
+cd Web
+subst s: .
+s:
+md Basics
+cd Basics
+copy z:\Shared\web\server.cmd
+start server
+np welcome.html
+np web.config
+md Bin
+cd Bin
+np basicwebapp.cs
+csc /t:library basicwebapp.cs
+cd ..
+copy welcome.html formpost.html
+np formpost.html
+np state.ashx
+cd Bin
+csc /t:library basicwebapp.cs
+cd ..
+copy welcome.html webctrltest.aspx
+np webctrltest.aspx
+np webctrltest.aspx.cs
+copy welcome.html postbacktest.aspx
+np postbacktest.aspx
+cd Bin
+np basicwebapp.cs
+csc /t:library basicwebapp.cs
+cd ..
+doskey /h > cmd-26-04-2017.txt

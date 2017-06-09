@@ -1,0 +1,14 @@
+S:\WpfMarkupTest\SimpleUIApp\bin\Debug\SimpleUIApp.exe.config
+S:\WpfMarkupTest\SimpleUIApp\bin\Debug\SimpleUIApp.exe
+S:\WpfMarkupTest\SimpleUIApp\bin\Debug\SimpleUIApp.pdb
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp.csprojResolveAssemblyReference.cache
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\MainWindow.g.cs
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\App.g.cs
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp_MarkupCompile.cache
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp_MarkupCompile.lref
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\MainWindow.baml
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp.g.resources
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp.Properties.Resources.resources
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp.csproj.GenerateResource.Cache
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp.exe
+S:\WpfMarkupTest\SimpleUIApp\obj\Debug\SimpleUIApp.pdb

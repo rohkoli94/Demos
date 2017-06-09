@@ -1,0 +1,8 @@
+s:
+cd WcfWSTest
+dir
+copy z:\Shared\web\clients\soapclienttest.php
+soapclienttest.php
+np soapclienttest.php
+start php -S localhost:5000
+doskey /h > cmd-24-04-2017.txt 

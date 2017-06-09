@@ -1,0 +1,36 @@
+    1  cd C++/
+    2  ls
+    3  mkdir Inheritance
+    4  cd Inheritance/
+    5  vi payroll1.h
+    6  vi derivedclasstest.cpp
+    7  vi payroll1.h
+    8  vi derivedclasstest.cpp
+    9  c++ -o derivedclasstest derivedclasstest.cpp 
+   10  ./derivedclasstest
+   11  vi derivedclasstest.cpp
+   12  c++ -o derivedclasstest derivedclasstest.cpp 
+   13  ./derivedclasstest
+   14  vi derivedclasstest.cpp
+   15  c++ -o derivedclasstest derivedclasstest.cpp 
+   16  ./derivedclasstest
+   17  vi derivedclasstest.cpp
+   18  cp payroll1.h payroll2.h 
+   19  vi payroll2.h 
+   20  cp derivedclasstest.cpp virtfunctest1.cpp
+   21  vi virtfunctest1.cpp 
+   22  c++ -o virtfunctest1 virtfunctest1.cpp
+   23  ./virtfunctest1
+   24  vi virtfunctest1.cpp 
+   25  vi virtfunctest1.cpp
+   26  vi payroll2.h 
+   27  vi virtfunctest1.cpp
+   28  vi payroll2.h 
+   29  vi virtfunctest1.cpp 
+   30  c++ -o virtfunctest1 virtfunctest1.cpp 
+   31  ./virtfunctest1 
+   32  vi virtfunctest1.cpp 
+   33  vi payroll2.h 
+   34  vi virtfunctest1.cpp 
+   35  clear
+   36  history > cmd-24-03-2017.txt

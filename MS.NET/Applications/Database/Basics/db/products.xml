@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<Products>
+  <Product>
+    <ProductNo>501</ProductNo>
+    <Price>4300</Price>
+    <Stock>50</Stock>
+  </Product>
+  <Product>
+    <ProductNo>502</ProductNo>
+    <Price>5400</Price>
+    <Stock>30</Stock>
+  </Product>
+  <Product>
+    <ProductNo>503</ProductNo>
+    <Price>6500</Price>
+    <Stock>20</Stock>
+  </Product>
+  <Product>
+    <ProductNo>504</ProductNo>
+    <Price>5600</Price>
+    <Stock>25</Stock>
+  </Product>
+  <Product>
+    <ProductNo>505</ProductNo>
+    <Price>3400</Price>
+    <Stock>35</Stock>
+  </Product>
+  <Product>
+    <ProductNo>506</ProductNo>
+    <Price>2300</Price>
+    <Stock>45</Stock>
+  </Product>
+</Products>

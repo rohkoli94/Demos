@@ -1,0 +1,70 @@
+cd MS.NET\Fundamentals\Language
+subst s: .
+s:
+cd OOP
+np delegatetest1.cs
+csc delegatetest1.cs
+delegatetest1.exe
+csc delegatetest1.cs
+delegatetest1.exe
+csc delegatetest1.cs
+delegatetest1.exe
+csc delegatetest1.cs
+delegatetest1.exe
+ildasm delegatetest1.exe
+csc delegatetest1.cs
+delegatetest1.exe
+copy delegatetest1.cs delegatetest2.cs
+np delegatetest2.cs
+np delegatetest1.cs
+csc delegatetest1.cs
+csc delegatetest2.cs
+delegatetest2.exe
+ildasm delegatetest2.exe
+np eventtest.cs
+csc eventtest.cs
+eventtest.exe
+csc eventtest.cs
+eventtest.exe
+ildasm eventtest.exe
+csc eventtest.cs
+eventtest.exe
+cd ..
+e:
+subst /d s:
+cd ..
+md Generic
+cd Generic
+subst s: .
+s:
+md Basics
+cd Basics
+np autoboxtest.cs
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+csc autoboxtest.cs
+ildasm autoboxtest.exe
+ildasm autoboxtest.exe /out=boxing.il
+np boxing.il
+csc autoboxtest.cs
+autoboxtest.exe -3
+autoboxtest.exe 5
+csc autoboxtest.cs
+autoboxtest.exe -3
+autoboxtest.exe 5
+csc autoboxtest.cs
+autoboxtest.exe -3
+autoboxtest.exe 5
+csc autoboxtest.cs
+autoboxtest.exe -3
+autoboxtest.exe 5
+ildasm autoboxtest.exe
+copy autoboxtest.cs genmethodtest.cs
+np genmethodtest.cs
+csc genmethodtest.cs
+genmethodtest.exe -3
+genmethodtest.exe 4
+ildasm genmethodtest.exe
+doskey /h > cmd08-04-17.txt

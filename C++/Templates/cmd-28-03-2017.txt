@@ -1,0 +1,59 @@
+    1  cd C++/
+    2  cd IN
+    3  cd Inheritance/
+    4  ls
+    5  ll
+    6  vi middodtest.cpp
+    7  c++ -o middodtest middodtest.cpp 
+    8  ./middodtest 
+    9  vi middodtest.cpp
+   10  c++ -o middodtest middodtest.cpp 
+   11  vi middodtest.cpp
+   12  c++ -o middodtest middodtest.cpp 
+   13  ./middodtest 
+   14  vi middodtest.cpp
+   15  cp middodtest.cpp mivitest.cpp
+   16  vi mivitest.cpp 
+   17  c++ -o mivitest mivitest.cpp 
+   18  ./mivitest 
+   19  vi mivitest.cpp 
+   20  cd ..
+   21  mkdir Templates
+   22  cd Templates/
+   23  vi functmplttest1.cpp
+   24  c++ -o functmplttest1 functmplttest1.cpp
+   25  ./functmplttest1
+   26  vi functmplttest1.cpp
+   27  c++ -o functmplttest1 functmplttest1.cpp
+   28  ./functmplttest1
+   29  vi functmplttest1.cpp
+   30  c++ -o functmplttest1 functmplttest1.cpp
+   31  vi functmplttest1.cpp
+   32  c++ -o functmplttest1 functmplttest1.cpp
+   33  ./functmplttest1
+   34  vi functmplttest1.cpp
+   35  c++ -o functmplttest1 functmplttest1.cpp
+   36  ./functmplttest1
+   37  vi functmplttest1.cpp
+   38  objdump -t functmplttest1
+   39  vi functmplttest1.cpp
+   40  c++ -o functmplttest1 functmplttest1.cpp
+   41  ./functmplttest1
+   42  vi functmplttest1.cpp
+   43  c++ -o functmplttest1 functmplttest1.cpp
+   44  vi functmplttest1.cpp
+   45  c++ -o functmplttest1 functmplttest1.cpp
+   46  ./functmplttest1
+   47  vi functmplttest1.cpp
+   48  vi functmplttest2.cpp 
+   49  c++ -o functmplttest2 functmplttest2.cpp
+   50  ./functmplttest2 
+   51  vi functmplttest2.cpp
+   52  c++ -o functmplttest2 functmplttest2.cpp
+   53  ./functmplttest2 
+   54  vi functmplttest2.cpp
+   55  c++ -o functmplttest2 functmplttest2.cpp
+   56  ./functmplttest2 
+   57  vi functmplttest2.cpp
+   58  ./functmplttest2 
+   59  history > cmd-28-03-2017.txt

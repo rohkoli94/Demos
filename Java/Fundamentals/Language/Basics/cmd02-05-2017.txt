@@ -1,0 +1,82 @@
+    1  clear
+    2  echo $PATH
+    3  mkdir Java
+    4  cd Java/
+    5  mkdir Fundamentals
+    6  cd Fundamentals/
+    7  mkdir Language
+    8  cd Language/
+    9  vi Hello.java
+   10  javac Hello.java 
+   11  ll
+   12  java Greeter
+   13  cp Greeter.class ~/Shared/Testing/
+   14  vi Greeter.class 
+   15  java Greeter
+   16  javac Hello.java 
+   17  java Greeter
+   18  vi Hello.java
+   19  javac Hello.java 
+   20  java Greeter
+   21  vi Hello.java
+   22  javac Hello.java 
+   23  java Greeter
+   24  mkdir Basics
+   25  cd Basics/
+   26  vi ForEachTest.java 
+   27  javac ForEachTest.java 
+   28  java ForEachTest
+   29  java ForEachTest Jack Jill John
+   30  java ForEachTest Jack and Jill John
+   31  java ForEachTest "Jack and Jill" John
+   32  vi MethodTest.java
+   33  javac MethodTest.java 
+   34  java MethodTest 50000 4 
+   35  vi MethodTest.java
+   36  javac MethodTest.java 
+   37  java MethodTest 50000 4 
+   38  vi VarArgTest.java
+   39  javac VarArgTest.java 
+   40  java VarArgTest
+   41  vi VarArgTest.java
+   42  javac VarArgTest.java 
+   43  vi VarArgTest.java
+   44  javac VarArgTest.java 
+   45  java VarArgTest
+   46  vi VarArgTest.java
+   47  javac VarArgTest.java 
+   48  vi VarArgTest.java
+   49  javac VarArgTest.java 
+   50  java VarArgTest
+   51  vi VarArgTest.java
+   52  javac VarArgTest.java 
+   53  vi TryCatchTest.java
+   54  javac TryCatchTest.java 
+   55  java TryCatchTest 1.5
+   56  java TryCatchTest 2.O5
+   57  vi TryCatchTest.java
+   58  javac TryCatchTest.java 
+   59  java TryCatchTest 1.5
+   60  java TryCatchTest 2.O5
+   61  java TryCatchTest 
+   62  vi TryCatchTest.java
+   63  javac TryCatchTest.java 
+   64  java TryCatchTest 
+   65  java TryCatchTest 1.5
+   66  java TryCatchTest 2.O5
+   67  java TryCatchTest
+   68  cp TryCatchTest.java TryFinallyTest.java
+   69  vi TryFinallyTest.java 
+   70  javac TryFinallyTest.java 
+   71  java TryFinallyTest 1.5
+   72  java TryFinallyTest 2.O5
+   73  java TryFinallyTest
+   74  vi TryFinallyTest.java 
+   75  javac TryFinallyTest.java 
+   76  java TryFinallyTest 1.5
+   77  java TryFinallyTest 2.O5
+   78  vi TryFinallyTest.java 
+   79  javac TryFinallyTest.java 
+   80  java TryFinallyTest 1.5
+   81  java TryFinallyTest 2.O5
+   82  history > cmd02-05-2017.txt

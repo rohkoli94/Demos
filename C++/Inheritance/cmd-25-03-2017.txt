@@ -1,0 +1,45 @@
+    1  cd C++/
+    2  cd Inheritance/
+    3  ls
+    4  vi virtfunctest2.cpp
+    5  c++ -o virtfunctest2 virtfunctest2.cpp 
+    6  ./virtfunctest2
+    7  vi virtfunctest2.cpp
+    8  vi payroll2.h 
+    9  c++ -o virtfunctest2 virtfunctest2.cpp 
+   10  ./virtfunctest2
+   11  vi virtfunctest2.cpp
+   12  c++ -o virtfunctest2 virtfunctest2.cpp 
+   13  ./virtfunctest2
+   14  vi virtfunctest2.cpp
+   15  cp virtfunctest2.cpp rttitest1.cpp
+   16  vi rttitest1.cpp 
+   17  c++ -o rttitest1 rttitest1.cpp 
+   18  vi rttitest1.cpp 
+   19  vi virtfunctest2.cpp 
+   20  c++ -o rttitest1 rttitest1.cpp
+   21  c++ -o virtfunctest2 virtfunctest2.cpp 
+   22  ./virtfunctest2 
+   23  vi rttitest1.cpp 
+   24  c++ -o rttitest1 rttitest1.cpp 
+   25  vi rttitest1.cpp 
+   26  c++ -o rttitest1 rttitest1.cpp 
+   27  ./rttitest1
+   28  vi rttitest1.cpp 
+   29  c++ -o rttitest1 rttitest1.cpp 
+   30  ./rttitest1
+   31  vi rttitest1.cpp 
+   32  c++ -o rttitest1 rttitest1.cpp
+   33  vi rttitest1.cpp 
+   34  c++ -o rttitest1 rttitest1.cpp
+   35  ./rttitest1
+   36  vi rttitest1.cpp 
+   37  cp rttitest1.cpp rttitest2.cpp
+   38  vi rttitest2.cpp 
+   39  c++ -o rttitest2 rttitest2.cpp 
+   40  ./rttitest2 
+   41  vi rttitest2.cpp 
+   42  c++ -o rttitest2 rttitest2.cpp 
+   43  ./rttitest2 
+   44  vi rttitest2.cpp 
+   45  history > cmd-25-03-2017.txt 

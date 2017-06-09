@@ -1,0 +1,41 @@
+    1  clear
+    2  cd C++/
+    3  cd Inheritance/
+    4  ls
+    5  vi banking1.h
+    6  vi banking1.cpp
+    7  c++ -c banking1.cpp 
+    8  vi adttest.cpp
+    9  c++ -o adttest adttest.cpp
+   10  c++ -o adttest adttest.cpp banking1.o 
+   11  ./adttest 
+   12  vi adttest.cpp
+   13  cp adttest.cpp adtmitest.cpp
+   14  vi adtmitest.cpp 
+   15  c++ -o adtmitest adtmitest.cpp
+   16  c++ -o adtmitest adtmitest.cpp banking1.o 
+   17  ./adtmitest 
+   18  vi adtmitest.cpp 
+   19  c++ -o adtmitest adtmitest.cpp banking1.o 
+   20  vi adtmitest.cpp 
+   21  c++ -o adtmitest adtmitest.cpp banking1.o 
+   22  ./adtmitest 
+   23  vi adtmitest.cpp 
+   24  c++ -o adtmitest adtmitest.cpp banking1.o
+   25  ./adtmitest
+   26  vi adtmitest.cpp
+   27  cp banking1.h  banking2.h
+   28  vi banking2.h 
+   29  cp banking1.cpp banking2.cpp
+   30  vi banking2.cpp 
+   31  c++ -c banking2.cpp
+   32  vi banking2.h 
+   33  vi banking2.cpp 
+   34  c++ -c banking2.cpp 
+   35  vi adtmitest.cpp 
+   36  c++ -o adtmitest adtmitest.cpp banking2.o
+   37  vi adtmitest.cpp 
+   38  c++ -o adtmitest adtmitest.cpp banking2.o
+   39  ./adtmitest
+   40  vi adtmitest.cpp 
+   41  history > cmd-27-03-2017.txt

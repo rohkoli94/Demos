@@ -1,0 +1,76 @@
+cd MS.NET
+cd Fundamentals\Language
+subst s: .
+s:
+cd Basics
+copy pointertypetest.cs fixedptrtest.cs
+np fixedptrtest.cs
+csc /unsafe fixedptrtest.cs
+fixedptrtest.exe
+fixedptrtest.exe 80000
+fixedptrtest.exe 90000
+dumpbin /headers fixedptrtest.exe | find "stack"
+mscalc
+calc
+editbin /stack:0x200000 fixedptrtest.exe
+dumpbin /headers fixedptrtest.exe | find "stack"
+fixedptrtest.exe 90000
+csc /unsafe fixedptrtest.cs
+copy structtypetest.cs refoutargtest.cs
+np refoutargtest.cs
+csc refoutargtest.cs
+refoutargtest.exe
+ildasm fixedptrtest.exe
+ildasm pointertypetest.exe
+ildasm refoutargtest.exe
+np fixedptrtest.cs
+csc refoutargtest.cs
+refoutargtest.exe
+csc refoutargtest.cs
+np propertytest.cs
+csc propertytest.cs
+propertytest.exe
+csc propertytest.cs
+propertytest.exe
+csc propertytest.cs
+propertytest.exe
+csc propertytest.cs
+propertytest.exe
+ildasm propertytest.exe
+np autoproptest.cs
+csc autoproptest.cs
+ildasm autoproptest.exe
+csc autoproptest.cs
+autoproptest.exe
+csc autoproptest.cs
+autoproptest.exe
+csc autoproptest.cs
+autoproptest.exe
+ildasm autoproptest.exe
+csc autoproptest.cs
+autoproptest.exe
+ildasm autoproptest.exe
+copy propertytest.cs opovldtest.cs
+np opovldtest.cs
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+ildasm opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+csc opovldtest.cs
+opovldtest.exe
+cd ..
+md OOP
+cd OOP
+cd ..\Basics
+dir
+ildasm refoutargtest.exe
+doskey /h > cmd05-04-17.txt

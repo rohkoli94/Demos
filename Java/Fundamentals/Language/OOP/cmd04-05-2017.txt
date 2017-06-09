@@ -1,0 +1,80 @@
+    6  vi src/Profitable.java
+    7  javac -d . src/Profitable.java
+    8  javap edu.met.banking.Profitable
+    9  vi src/Profitable.java
+   10  javac -d . src/Profitable.java
+   11  javap edu.met.banking.Profitable
+   12  vi src/SavingsAccount.java 
+   13  javac -d . src/SavingsAccount.java 
+   14  vi IterfaceTest1.java
+   15  mv IterfaceTest1.java InterfaceTest1.java
+   16  javac InterfaceTest1.java
+   17  vi IterfaceTest1.java
+   18  vi InterfaceTest1.java
+   19  javac InterfaceTest1.java
+   20  java InterfaceTest1
+   21  vi InterfaceTest1.java
+   22  javac InterfaceTest1.java
+   23  java InterfaceTest1
+   24  javac InterfaceTest2.java
+   25  vi InterfaceTest2.java
+   26  javac InterfaceTest2.java
+   27  java InterfaceTest2
+   28  vi InnerClassTest.java
+   29  javac InnerClassTest.java
+   30  java InnerClassTest
+   31  vi InnerClassTest.java
+   32  javac InnerClassTest.java
+   33  java InnerClassTest
+   34  ll InnerClassTest*.class
+   35  vi InnerClassTest.java
+   36  javac InnerClassTest.java
+   37  vi InnerClassTest.java
+   38  javac InnerClassTest.java
+   39  java InnerClassTest
+   40  vi InnerClassTest.java
+   41  javac InnerClassTest.java
+   42  java InnerClassTest
+   43  ll InnerClassTest*.class
+   44  vi InnerClassTest.java
+   45  javac InnerClassTest.java
+   46  vi InnerClassTest.java
+   47  javac InnerClassTest.java
+   48  vi InnerClassTest.java
+   49  javac InnerClassTest.java
+   50  cp InnerClassTest.java LambdaTest.java
+   51  vi LambdaTest.java 
+   52  cp InnerClassTest.java LambdaTest.javaq
+   53  vi LambdaTest.java 
+   54  rm LambdaTest.javaq
+   55  javac LambdaTest.java 
+   56  java\ LambdaTest
+   57  java LambdaTest
+   58  vi LambdaTest.java 
+   59  javac LambdaTest.java 
+   60  vi LambdaTest.java 
+   61  javac LambdaTest.java 
+   62  vi LambdaTest.java 
+   63  javac LambdaTest.java 
+   64  java LambdaTest
+   65  javap -p LambdaTest
+   66  vi LambdaTest.java 
+   67  vi GCTest.java
+   68  javac GCTest.java
+   69  java GCTest
+   70  vi GCTest.java
+   71  javac GCTest.java
+   72  java GCTest
+   73  vi GCTest.java
+   74  javac GCTest.java
+   75  java GCTest
+   76  vi GCTest.java
+   77  javac GCTest.java
+   78  vi GCTest.java
+   79  javac GCTest.java
+   80  java GCTest
+   81  vi GCTest.java
+   82  javac GCTest.java
+   83  java GCTest
+   84  javap -p -c LambdaTest
+   85  history >cmd04-05-2017.txt

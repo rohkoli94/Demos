@@ -1,0 +1,93 @@
+cd MS.NET\Fundamentals\Generic
+subst s: .
+s:
+md Collections
+cd Collections
+copy ..\Basics\interval.cs
+np listtest.cs
+csc listtest.cs interval.cs
+listtest.exe
+np listtest.cs
+csc listtest.cs interval.cs
+listtest.exe
+copy listtest.cs settest1.cs
+np settest1.cs
+csc settest1.cs interval.cs
+settest1.exe
+copy settest1.cs settest2.cs
+np settest2.cs
+csc settest2.cs interval.cs
+settest2.exe
+csc settest2.cs interval.cs
+settest2.exe
+copy settest1.cs dictionarytest1.cs
+np dictionarytest1.cs
+csc dictionarytest1.cs interval.cs
+dictionarytest1.exe
+csc dictionarytest1.cs interval.cs
+dictionarytest1.exe
+csc dictionarytest1.cs interval.cs
+dictionarytest1.exe
+copy dictionarytest1.cs dictionarytest2.cs
+np dictionarytest2.cs
+csc dictionarytest2.cs interval.cs
+dictionarytest2.exe
+csc dictionarytest2.cs interval.cs
+dictionarytest2.exe
+copy dictionarytest2.cs dictionarytest3.cs
+np dictionarytest3.cs
+csc dictionarytest3.cs interval.cs
+dictionarytest3.exe
+csc dictionarytest3.cs interval.cs
+dictionarytest3.exe
+np linqtest1.cs
+csc linqtest1.cs
+linqtest1.exe
+csc linqtest1.cs
+linqtest1.exe
+csc linqtest1.cs
+linqtest1.exe
+np linqtest2.cs
+csc linqtest2.cs interval.cs
+linqtest2.exe
+linqtest2.exe 300
+linqtest2.exe 400
+csc linqtest2.cs interval.cs
+linqtest2.exe
+linqtest2.exe 300
+linqtest2.exe 400
+cd ..
+e:
+subst /d s:
+cd ..
+md Runtime
+cd Runtime
+subst s: .
+s:
+md Reflection
+cd Reflection
+copy e:\MS.NET\Fundamentals\Language\OOP\payroll2.cs payroll.cs
+copy e:\MS.NET\Fundamentals\Language\OOP\interval.cs
+csc /t:library payroll.cs
+np objaccesstest.cs
+csc objaccesstest.cs /r:payroll.dll
+objaccesstest.exe
+csc objaccesstest.cs /r:payroll.dll interval.cs
+objaccesstest.exe
+csc objaccesstest.cs /r:payroll.dll interval.cs
+objaccesstest.exe
+csc objaccesstest.cs /r:payroll.dll interval.cs
+objaccesstest.exe
+csc objaccesstest.cs /r:payroll.dll interval.cs
+objaccesstest.exe
+csc objaccesstest.cs /r:payroll.dll interval.cs
+objaccesstest.exe
+np simplefin.cs
+np earlybindtest.cs
+csc /t:library simplefin.cs
+csc earlybindtest.cs /r:simplefin.dll
+earlybindtest.exe 500000 
+earlybindtest.exe 500000 Finance.HomeLoan,simplefin
+earlybindtest.exe 500000 Finance.EducationLoan,simplefin
+earlybindtest.exe 500000 Finance.BusinessLoan,simplefin
+doskey /h > cmd11-04-17.txt

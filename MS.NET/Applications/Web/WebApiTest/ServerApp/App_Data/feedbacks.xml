@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Feedback>
+    <From>Jack</From>
+    <Comment>This is great.</Comment>
+  </Feedback>
+  <Feedback>
+    <From>Jill</From>
+    <Comment>I don't like it.</Comment>
+  </Feedback>
+</Document>

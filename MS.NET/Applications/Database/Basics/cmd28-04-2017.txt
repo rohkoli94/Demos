@@ -1,0 +1,47 @@
+cd MS.NET\Applications\
+dir
+subst s: .
+s:
+cls
+dir
+e:
+cd ..
+cd Applications
+subst /d s:
+md Database
+cd Database
+subst s: .
+s:
+md Basics
+cd Basics
+np dbquerytest.cs
+np db\Shop.sql
+csc dbquerytest.cs
+np dbquerytest.exe.config
+dbquerytest.exe
+np updatetest.cs
+csc updatetest.cs
+updatetest.exe 101
+csc updatetest.cs
+updatetest.exe 101
+updatetest.exe
+updatetest.exe 107
+copy updatetest.cs paramsqltest.cs
+np paramsqltest.cs
+csc paramsqltest.cs 
+paramsqltest.exe CU101 104 7
+paramsqltest.exe CU102 106 8
+paramsqltest.exe CU102 105 8
+np db\Shop.sql
+copy paramsqltest.cs storproctest.cs
+np storproctest.cs
+csc storproctest.cs
+storproctest.exe CU103 101 6
+storproctest.exe CU105 102 8
+storproctest.exe CU104 102 8
+np datasettest.cs
+csc datasettest.cs
+datasettest.exe 
+datasettest.exe db\products.xml
+np db\products.xml
+doskey /h > cmd28-04-2017.txt 

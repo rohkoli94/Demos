@@ -1,0 +1,11 @@
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\bin\Debug\DBWinApp.exe.config
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\bin\Debug\DBWinApp.exe
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\bin\Debug\DBWinApp.pdb
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.csprojResolveAssemblyReference.cache
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.MainForm.resources
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.Properties.Resources.resources
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.csproj.GenerateResource.Cache
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.exe
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.pdb
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.OrderForm.resources
+E:\MS.NET\Applications\Database\DataSetTest1\DBWinApp\obj\Debug\DBWinApp.InvoiceForm.resources

@@ -1,0 +1,65 @@
+    1  ll
+    2  ~/oracle/startxe
+    3  cp UpdateTest.java ParamSqlTest.java
+    4  vi ParamSqlTest.java 
+    5  javac ParamSqlTest.java 
+    6  java ParamSqlTest CU101 103 5
+    7  java ParamSqlTest CU102 106 10
+    8  java ParamSqlTest CU102 104 10
+    9  vi ~/Shared/db/salesora.sql 
+   10  cp ParamSqlTest.java StorProcTest.java
+   11  vi StorProcTest.java 
+   12  javac StorProcTest.java 
+   13  java StorProcTest CU101 101 11
+   14  java StorProcTest CU105 103 8
+   15  java StorProcTest CU104 103 8
+   16  cd ..
+   17  mkdir NTierTest
+   18  cd NTierTest/
+   19  mkdir MiddleTier
+   20  cd MiddleTier/
+   21  mkdir sales
+   22  vi sales/OrderManager.java
+   23  javac sales/OrderManager.java
+   24  vi Server.java
+   25  javac Server.java
+   26  java Server &
+   27  vi TestClient.java
+   28  wsimport -p sales.client http://localhost:8020/sales/ordermanager?wsdl
+   29  vi TestClient.java
+   30  javac TestClient.java
+   31  java TestClient CU104 101 3
+   32  java TestClient CU103 107 5
+   33  ll
+   34  vi server.log 
+   35  java TestClient CU103 102 5
+   36  ps 
+   37  kill 4508
+   38  vi Server.java
+   39  javac Server.java
+   40  java Server &
+   41  cd ..
+   42  mkdir PresentationTier
+   43  cd PresentationTier/
+   44  mkdir WEB-INF
+   45  mkdir WEB-INF/classes
+   46  cp ~/Shared/web.xml WEB-INF/
+   47  ~/glassfish4/bin/asadmin start-domain
+   48  ~/glassfish4/bin/asadmin deploy .
+   49  cd WEB-INF/classes/
+   50  wsimport -p sales.client http://localhost:8020/sales/ordermanager?wsdl
+   51  vi RESTfulApp.java
+   52  javac -d . RESTfulApp.java
+   53  export CLASSPATH=.:~/glassfish4/glassfish/lib/javaee.jar 
+   54  javac -d . RESTfulApp.java
+   55  vi RESTfulApp.java
+   56  vi OrderManagerRS.java
+   57  javac -d . OrderManagerRS.java
+   58  touch ../../.reload
+   59  cd ../../
+   60  cp ~/Shared/client.html .
+   61  cp ~/Shared/jquery.js .
+   62  ps
+   63  kill 4728
+   64  ~/glassfish4/bin/asadmin stop-domain
+   65  history > cmd17-05-2017.txt

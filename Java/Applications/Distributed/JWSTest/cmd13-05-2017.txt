@@ -1,0 +1,76 @@
+    1  mkdir RMITest
+    2  cd RMITest/
+    3  mkdir shopping 
+    4  mv ~/Shared/Store.java shopping/
+    5  vi shopping/Store.java 
+    6  javac shopping/Store.java 
+    7  vi shopping/ItemInfo.java
+    8  javac shopping/ItemInfo.java
+    9  vi shopping/ShopKeeper.java
+   10  javac shopping/ShopKeeper.java
+   11  vi shopping/ShopKeeperImpl.java
+   12  javac shopping/ShopKeeperImpl.java
+   13  vi Server.java
+   14  rm Server.java 
+   15  vi ServerApp.java
+   16  javac ServerApp.java
+   17  rmiregistry &
+   18  java ServerApp &
+   19  vi ClientApp.java
+   20  javac ClientApp.java
+   21  vi ClientApp.java
+   22  javac ClientApp.java
+   23  java ClientApp
+   24  vi ClientApp.java
+   25  javac ClientApp.java
+   26  java ClientApp
+   27  ps 
+   28  kill 3490
+   29  kill 3477
+   30  cd ..
+   31  mkdir RMIStateTest
+   32  cd RMIStateTest/
+   33  mkdir shopping
+   34  cp ../RMITest/shopping/Store.java shopping/
+   35  javac shopping/Store.java 
+   36  vi shopping/MissingItemException.java
+   37  javac shopping/MissingItemException.java
+   38  vi shopping/Cart.java
+   39  javac shopping/Cart.java
+   40  vi shopping/CartImpl.java
+   41  javac shopping/CartImpl.java
+   42  vi shopping/CartService.java
+   43  javac shopping/CartService.java
+   44  vi shopping/CartServiceImpl.java
+   45  javac shopping/CartServiceImpl.java
+   46  vi ServerApp.java
+   47  javac ServerApp.java
+   48  rmiregistry &
+   49  java ServerApp & 
+   50  vi ClientApp.java
+   51  javac ClientApp.java
+   52  java ClientApp
+   53  ps
+   54  kill 3940
+   55  kill 3953
+   56  cd ..
+   57  mkdir JWSTest
+   58  cd JWSTest/
+   59  mkdir shopping
+   60  cp ../RMITest/shopping/Store.java shopping/
+   61  vi shopping/OrderInfo.java
+   62  javac shopping/OrderInfo.java
+   63  vi shopping/CustomerWS.java
+   64  javac shopping/CustomerWS.java
+   65  vi ServerApp.java
+   66  javac ServerApp.java
+   67  java ServerApp &
+   68  wsimport -p shopping.client http://localhost:8059/shopping/customerws?wsdl
+   69  ll shopping/client/
+   70  vi ClientApp.java
+   71  javac ClientApp.java
+   72  java ClientApp apple 18
+   73  java ClientApp mango 9
+   74  java ClientApp orange 600
+   75  java ClientApp cabbage 3
+   76  history > cmd13-05-2017.txt

@@ -1,0 +1,70 @@
+   35  clear
+   36  cd C++/
+   37  ls
+   38  mkdir Classes
+   39  cd Classes/
+   40  vi classtest1.cpp
+   41  c++ -o classtest1 classtest1.cpp
+   42  vi classtest1.cpp
+   43  c++ -o classtest1 classtest1.cpp
+   44  ./classtest1
+   45  vi classtest1.cpp
+   46  c++ -o classtest1 classtest1.cpp
+   47  ./classtest1 
+   48  vi classtest1.cpp
+   49  c++ -o classtest1 classtest1.cpp
+   50  ./classtest1 
+   51  cp classtest1.cpp classtest2.cpp 
+   52  vi classtest2.cpp 
+   53  c++ -o classtest2 classtest2.cpp 
+   54  ./classtest2
+   55  vi classtest2.cpp 
+   56  cp classtest2.cpp ctortest.cpp
+   57  vi ctortest.cpp 
+   58  c++ -o ctortest ctortest.cpp
+   59  ./ctortest 
+   60  vi ctortest.cpp 
+   61  c++ -o ctortest ctortest.cpp
+   62  ./ctortest 
+   63  vi ctortest.cpp 
+   64  c++ -o ctortest ctortest.cpp
+   65  ./ctortest 
+   66  vi ctortest.cpp 
+   67  c++ -o ctortest ctortest.cpp
+   68  ./ctortest 
+   69  vi ctortest.cpp 
+   70  c++ -o ctortest ctortest.cpp
+   71  vi ctortest.cpp 
+   72  c++ -o ctortest ctortest.cpp
+   73  vi ctortest.cpp 
+   74  c++ -o ctortest ctortest.cpp
+   75  vi ctortest.cpp 
+   76  vi ~/.vimrc 
+   77  vi ctortest.cpp 
+   78  c++ -o ctortest ctortest.cpp
+   79  ./ctortest 
+   80  vi ctortest.cpp 
+   81  c++ -o ctortest ctortest.cpp
+   82  ./ctortest 
+   83  cp ctortest.cpp dtortest.cpp
+   84  vi dtortest.cpp 
+   85  c++ -o dtortest dtortest.cpp 
+   86  vi dtortest.cpp 
+   87  c++ -o dtortest dtortest.cpp 
+   88  ./dtortest
+   89  vi dtortest.cpp 
+   90  c++ -o dtortest dtortest.cpp 
+   91  vi dtortest.cpp 
+   92  c++ -o dtortest dtortest.cpp 
+   93  ./dtortest
+   94  vi dtortest.cpp 
+   95  c++ -o dtortest dtortest.cpp 
+   96  ./dtortest
+   97  vi dtortest.cpp 
+   98  c++ -o dtortest dtortest.cpp 
+   99  ./dtortest
+  100  vi dtortest.cpp 
+  101  c++ -o dtortest dtortest.cpp 
+  102  ./dtortest
+  103  vi dtortest.cpp 
+  104  history > cmd-21-03-2017.txt

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b1c4ce2e-76d5-4c8f-846f-b8873ba530fa" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8013/shopping/CustomerSoap.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CustomerSoap.xsd" MetadataType="Schema" ID="0ad65614-4881-4c89-bf50-4efe9f9ccfd3" SourceId="1" SourceUrl="http://localhost:8013/shopping/CustomerSoap.svc?xsd=xsd0" />
+    <MetadataFile FileName="CustomerService.wsdl" MetadataType="Wsdl" ID="a3df03cc-11fb-472f-82fd-b020bf4e8090" SourceId="1" SourceUrl="http://localhost:8013/shopping/CustomerSoap.svc?wsdl" />
+    <MetadataFile FileName="CustomerSoap1.xsd" MetadataType="Schema" ID="517e206f-be4b-4d9d-87a4-c1a372f161ca" SourceId="1" SourceUrl="http://localhost:8013/shopping/CustomerSoap.svc?xsd=xsd2" />
+    <MetadataFile FileName="CustomerSoap2.xsd" MetadataType="Schema" ID="858c3855-e0dd-4a93-b12a-c4e0dbdb8a52" SourceId="1" SourceUrl="http://localhost:8013/shopping/CustomerSoap.svc?xsd=xsd1" />
+    <MetadataFile FileName="CustomerSoap.disco" MetadataType="Disco" ID="87e6c794-53fc-472d-9a31-5f1ba6ce07c8" SourceId="1" SourceUrl="http://localhost:8013/shopping/CustomerSoap.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

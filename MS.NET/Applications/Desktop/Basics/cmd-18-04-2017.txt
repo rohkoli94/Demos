@@ -1,0 +1,10 @@
+s:
+cd Basics
+np wpfdepobjtest.cs
+csc /t:winexe wpfdepobjtest.cs
+np wpf.rsp
+csc @wpf.rsp wpfdepobjtest.cs
+copy wpfdepobjtest.cs wpfuielemtest.cs
+np wpfuielemtest.cs
+csc @wpf.rsp wpfuielemtest.cs
+doskey /h > cmd-18-04-2017.txt

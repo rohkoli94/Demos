@@ -1,0 +1,12 @@
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\MiddleTierApp.exe.config
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\MiddleTierApp.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\MiddleTierApp.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\EntityFramework.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\EntityFramework.SqlServer.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\Sales.dll
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\Sales.pdb
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\EntityFramework.xml
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\bin\Debug\EntityFramework.SqlServer.xml
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\obj\Debug\MiddleTierApp.csprojResolveAssemblyReference.cache
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\obj\Debug\MiddleTierApp.exe
+E:\MS.NET\Applications\Database\EFDesignerTest\MiddleTierApp\obj\Debug\MiddleTierApp.pdb

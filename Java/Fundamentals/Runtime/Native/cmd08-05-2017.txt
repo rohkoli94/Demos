@@ -1,0 +1,82 @@
+    4  clear
+    5  mkdir cmd-classes
+    6  mv ~/Shared/commands/ cmd-classes/
+    7  vi ClassLoaderTest.java
+    8  javac ClassLoaderTest.java
+    9  vi ClassLoaderTest.java
+   10  javac ClassLoaderTest.java
+   11  java ClassLoaderTest
+   12  java -cp .:cmd-classes/ ClassLoaderTest
+   13  vi ClassLoaderTest.java
+   14  javac ClassLoaderTest.java
+   15  java ClassLoaderTest
+   16  java -cp .:cmd-classes/ ClassLoaderTest
+   17  java ClassLoaderTest
+   18  cp ClassLoaderTest.java SandboxTest.java
+   19  vi SandboxTest.java 
+   20  javac SandboxTest.java 
+   21  java SandboxTest
+   22  vi SandboxTest.java 
+   23  javac SandboxTest.java 
+   24  vi SandboxTest.java 
+   25  javac SandboxTest.java 
+   26  java SandboxTest
+   27  vi SandboxTest.java 
+   28  javac SandboxTest.java 
+   29  vi SandboxTest.java 
+   30  javac SandboxTest.java 
+   31  vi SandboxTest.java 
+   32  javac SandboxTest.java 
+   33  java SandboxTest
+   34  java -cp .:cmd-classes/ SandboxTest
+   35  mv ~/Shared/Greeter.java .
+   36  vi Greeter.java 
+   37  javac Greeter.java 
+   38  vi DynamicProxyTest.java
+   39  javac DynamicProxyTest.java
+   40  java DynamicProxyTest
+   41  vi DynamicProxyTest.java
+   42  javac DynamicProxyTest.java
+   43  java DynamicProxyTest
+   44  vi DynamicProxyTest.java
+   45  cd ..
+   46  mkdir Native
+   47  cd Native/
+   48  export CPATH=/usr/java/jdk1.8.0_121/include/:/usr/java/jdk1.8.0_121/include/linux/
+   49  vi NativeMethodTest.java
+   50  javac NativeMethodTest.java
+   51  java NativeMethodTest 24 36
+   52  vi nmt.c
+   53  cc -shared -fPIC -o libnmt.so nmt.c 
+   54  ll
+   55  java NativeMethodTest 24 36
+   56  vi NativeMethodTest.java
+   57  javac NativeMethodTest.java
+   58  java NativeMethodTest 24 36
+   59  java -Djava.library.path=. NativeMethodTest 24 36
+   60  vi nmt.c
+   61  cc -shared -fPIC -o libnmt.so nmt.c 
+   62  java -Djava.library.path=. NativeMethodTest 24 36
+   63  export LD_LIBRARY_PATH=.
+   64  java NativeMethodTest 24 36
+   65  vi StringAccessTest.java
+   66  javac StringAccessTest.java
+   67  vi StringAccessTest.java
+   68  javac StringAccessTest.java
+   69  java StringAccessTest monday
+   70  javah StringHelper
+   71  vi StringHelper.h 
+   72  vi strh.cpp
+   73  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   74  java StringAccessTest monday
+   75  java StringAccessTest tuesday
+   76  vi StringAccessTest.java
+   77  javac StringAccessTest.java
+   78  java StringAccessTest monday
+   79  javah StringHelper
+   80  vi StringHelper.h 
+   81  vi strh.cpp
+   82  c++ -shared -fPIC -o libstrh.so strh.cpp 
+   83  java StringAccessTest monday
+   84  vi strh.cpp
+   85  history > cmd08-05-2017.txt

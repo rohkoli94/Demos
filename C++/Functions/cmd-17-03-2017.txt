@@ -1,0 +1,89 @@
+    1  ls
+    2  mkdir C++ 
+    3  cd C++/
+    4  mkdir Functions
+    5  cd Functions/
+    6  ls
+    7  vi namespacetest1.cpp
+    8  c++ -o namespacetest1 namespacetest1.cpp 
+    9  ./namespacetest1 
+   10  echo $?
+   11  vi namespacetest1.cpp
+   12  c++ -o namespacetest1 namespacetest1.cpp 
+   13  echo $?
+   14  ./namespacetest1
+   15  echo $?
+   16  vi namespacetest1.cpp
+   17  c++ -o namespacetest1 namespacetest1.cpp 
+   18  ./namespacetest1
+   19  echo $?
+   20  vi namespacetest1.cpp
+   21  c++ -o namespacetest1 namespacetest1.cpp 
+   22  ./namespacetest1
+   23  echo $?
+   24  vi namespacetest1.cpp
+   25  c++ -o namespacetest1 namespacetest1.cpp 
+   26  vi namespacetest1.cpp
+   27  c++ -o namespacetest1 namespacetest1.cpp 
+   28  ./namespacetest1
+   29  echo $?
+   30  vi namespacetest1.cpp
+   31  objdump -t namespacetest1
+   32  c++filt _ZN5First6secondE
+   33  c++filt _YN5First6secondE
+   34  vi namespacetest2.h
+   35  vi namespacetest2.cpp
+   36  vi ~/.vimrc 
+   37  c++ -o namespacetest2 namespacetest2.cpp 
+   38  ./namespacetest2 
+   39  echo $?
+   40  vi namespacetest2.cpp
+   41  c++ -o namespacetest2 namespacetest2.cpp 
+   42  ./namespacetest2 
+   43  echo $?
+   44  vi namespacetest2.cpp
+   45  c++ -o namespacetest2 namespacetest2.cpp 
+   46  vi namespacetest2.cpp
+   47  c++ -o namespacetest2 namespacetest2.cpp 
+   48  ./namespacetest2 
+   49  echo $?
+   50  vi hello.cpp
+   51  c++ -o hello hello.cpp 
+   52  ./hello 
+   53  vi power.cpp
+   54  c++ -c power.cpp 
+   55  vi power.cpp
+   56  c++ -c power.cpp 
+   57  vi functest.cpp
+   58  c++ -o functest functest.cpp 
+   59  c++ -o functest functest.cpp power.o 
+   60  vi functest.cpp
+   61  c++ -o functest functest.cpp power.o 
+   62  c++ -o functest functest.cpp
+   63  c++ -o functest functest.cpp power.o 
+   64  ./functest
+   65  vi functest.cpp
+   66  c++ -o functest functest.cpp power.o
+   67  vi functest.cpp
+   68  c++ -o functest functest.cpp power.o
+   69  vi power.cpp 
+   70  objdump -t power.o 
+   71  vi functest.cpp
+   72  c++ -o functest functest.cpp power.o
+   73  vi functest.cpp
+   74  c++ -o functest functest.cpp power.o
+   75  ./functest 
+   76  c++filt _ZN4Jack6ActionEfsPc
+   77  vi functest.cpp
+   78  c++ -c functest.cpp 
+   79  objdump -t functest.o 
+   80  objdump -t power.o 
+   81  vi functest.cpp
+   82  cp /SoftDev/Foundations/Fundamentals/C/Basics/myfunc.o .
+   83  vi cfunctest.cpp
+   84  c++ -o cfunctest cfunctest.cpp myfunc.o 
+   85  objdump -t myfunc.o 
+   86  vi cfunctest.cpp
+   87  c++ -o cfunctest cfunctest.cpp myfunc.o
+   88  ./cfunctest 
+   89  history > cmd-17-03-2017.txt

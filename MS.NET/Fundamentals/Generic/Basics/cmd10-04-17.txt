@@ -1,0 +1,66 @@
+np genclasstest.cs
+csc genclasstest.cs
+genclasstest.exe
+csc genclasstest.cs
+genclasstest.exe
+csc genclasstest.cs
+csc genclasstest.cs interval.cs
+genclasstest.exe
+csc genclasstest.cs interval.cs
+genclasstest.exe
+copy genclasstest.cs variancetest.cs
+np variancetest.cs
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+variancetest.exe
+csc variancetest.cs interval.cs
+cd MS.NET\Fundamentals\Generic
+subst s: .
+s:
+cd Basics
+np nullvaltypetest.cs
+csc nullvaltypetest.cs
+nullvaltypetest.exe jill
+nullvaltypetest.exe jeff
+csc nullvaltypetest.cs
+nullvaltypetest.exe jill
+nullvaltypetest.exe jeff
+csc nullvaltypetest.cs
+nullvaltypetest.exe jill
+nullvaltypetest.exe jeff
+csc nullvaltypetest.cs
+nullvaltypetest.exe jill
+nullvaltypetest.exe jeff
+copy genclasstest.cs iterationtest1.cs
+np iterationtest1.cs
+csc iterationtest1.cs interval.cs
+iterationtest1.exe
+csc iterationtest1.cs interval.cs
+iterationtest1.exe
+copy iterationtest1.cs iterationtest2.cs
+np iterationtest2.cs
+csc iterationtest1.cs interval.cs
+csc iterationtest2.cs interval.cs
+iterationtest2.exe
+ildasm iterationtest2.exe
+csc iterationtest2.cs interval.cs
+iterationtest2.exe
+csc iterationtest2.cs interval.cs
+iterationtest2.exe
+csc iterationtest2.cs interval.cs
+iterationtest2.exe
+csc iterationtest2.cs interval.cs
+iterationtest2.exe
+np iterationtest2.cs
+doskey /h > cmd10-04-17.txt

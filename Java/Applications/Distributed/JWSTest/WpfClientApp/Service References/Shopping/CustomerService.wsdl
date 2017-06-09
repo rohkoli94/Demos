@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://shopping/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="CustomerService" targetNamespace="http://shopping/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8059/shopping/customerws?xsd=1" namespace="http://shopping/" />
+    </xsd:schema>
+  </types>
+  <message name="Purchase">
+    <part name="parameters" element="tns:Purchase" />
+  </message>
+  <message name="PurchaseResponse">
+    <part name="parameters" element="tns:PurchaseResponse" />
+  </message>
+  <message name="Inquire">
+    <part name="parameters" element="tns:Inquire" />
+  </message>
+  <message name="InquireResponse">
+    <part name="parameters" element="tns:InquireResponse" />
+  </message>
+  <portType name="CustomerSupport">
+    <operation name="Purchase">
+      <input wsam:Action="http://shopping/CustomerSupport/PurchaseRequest" message="tns:Purchase" />
+      <output wsam:Action="http://shopping/CustomerSupport/PurchaseResponse" message="tns:PurchaseResponse" />
+    </operation>
+    <operation name="Inquire">
+      <input wsam:Action="http://shopping/CustomerSupport/InquireRequest" message="tns:Inquire" />
+      <output wsam:Action="http://shopping/CustomerSupport/InquireResponse" message="tns:InquireResponse" />
+    </operation>
+  </portType>
+  <binding name="CustomerSoapBinding" type="tns:CustomerSupport">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="Purchase">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="Inquire">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CustomerService">
+    <port name="CustomerSoap" binding="tns:CustomerSoapBinding">
+      <soap:address location="http://localhost:8059/shopping/customerws" />
+    </port>
+  </service>
+</definitions>

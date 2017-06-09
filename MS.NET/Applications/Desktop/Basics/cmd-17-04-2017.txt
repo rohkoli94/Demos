@@ -1,0 +1,45 @@
+cd MS.NET\Fundamentals\Platform\
+subst s: .
+s:
+dir
+cd Persistence
+dir
+cl
+scls
+cls
+cd ..
+e:
+subst /d s:
+cd ..
+md Applications 
+cd Applications
+md Desktop
+cd Desktop
+subst s: .
+s:
+md Basics 
+cd Basics
+np winplaintest.cs
+csc winplaintest.cs
+winplaintest.exe
+start .
+dumpbin /headers winplaintest.exe | find "subsystem"
+dumpbin /headers c:\Windows\System32\notepad.exe | find "subsystem"
+csc /t:winexe winplaintest.exe
+csc /t:winexe winplaintest.cs 
+dumpbin /headers winplaintest.exe | find "subsystem"
+csc winplaintest.cs
+csc /t:winexe winplaintest.exe
+csc /t:winexe winplaintest.cs 
+np winplaintest.cs
+copy winplaintest.cs winpainttest.cs 
+np winpainttest.cs
+csc /t:winexe winpainttest.cs
+copy winplaintest.cs winchildtest.cs
+copy e:\MS.NET\Fundamentals\Platform\Concurrency\worker.cs
+np e:\MS.NET\Fundamentals\Platform\Concurrency\worker.cs
+np e:\MS.NET\Fundamentals\Platform\Concurrency\tasktest2.cs
+np winchildtest.cs
+csc /t:winexe winchildtest.cs worker.cs
+doskey /h cmd-17-04-2017.txt 
+doskey /h > cmd-17-04-2017.txt 

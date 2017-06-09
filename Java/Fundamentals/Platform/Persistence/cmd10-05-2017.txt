@@ -1,0 +1,95 @@
+    1  clear
+    2  cp ExecutorTest2.java ForkJoinPoolTest.java
+    3  vi ForkJoinPoolTest.java 
+    4  javac ForkJoinPoolTest.java 
+    5  java ForkJoinPoolTest 
+    6  cp Worker.class ~/Shared/Testing/
+    7  cp ForkJoinPoolTest*.class ~/Shared/Testing/
+    8  vi ParallelStreamTest.java
+    9  javac ParallelStreamTest.java
+   10  java ParallelStreamTest
+   11  cp ParallelStreamTest.class ~/Shared/Testing/
+   12  cd ..
+   13  mkdir Persistence 
+   14  cd Persistence/
+   15  vi DataIOTest.java
+   16  javac DataIOTest.java
+   17  java DataIOTest hdd 4999.95 20000
+   18  java DataIOTest
+   19  ll product.*
+   20  vi product.dat 
+   21  cp DataIOTest.java TextIOTest.java
+   22  vi TextIOTest.java 
+   23  javac TextIOTest.java 
+   24  java TextIOTest hdd 4999.95 20000
+   25  java TextIOTest
+   26  ll product.*
+   27  vi product.txt 
+   28  cp -r ~/Shared/hr serhr
+   29  vi serhr/Employee.java 
+   30* vi serhr/Depa
+   31  vi serhr/Employee.java 
+   32  javac -d . serhr/*.java
+   33  vi ObjSerTest.java
+   34  javac ObjSerTest.java
+   35  java ObjSerTest Accounting
+   36  java ObjSerTest
+   37  vi dept.dat 
+   38  vi serhr/Employee.java 
+   39  javac -d . serhr/*.java
+   40  java ObjSerTest Accounting
+   41  vi dept.dat 
+   42  java ObjSerTest
+   43  cp -r serhr/ exthr
+   44  vi exthr/Employee.java 
+   45  javac exthr/Employee.java 
+   46  rm exthr/*.class
+   47  javac -d . exthr/*.java
+   48  java ObjSerTest Accounting 
+   49  java ObjSerTest
+   50  vi dept.dat 
+   51  vi exthr/Employee.java 
+   52  mv ~/Shared/hr xmlhr
+   53  vi xmlhr/Department.java 
+   54  javac -d . xmlhr/*.java
+   55  cp ObjSerTest.java XmlBindTest.java
+   56  vi XmlBindTest.java 
+   57  javac XmlBindTest.java 
+   58  java XmlBindTest Accounting
+   59  java XmlBindTest
+   60  ll dept.*
+   61  vi dept.xml 
+   62  vi XmlBindTest.java 
+   63  javac XmlBindTest.java 
+   64  java XmlBindTest
+   65  java XmlBindTest Accounting
+   66  java XmlBindTest
+   67  ll dept.*
+   68  vi dept.xml 
+   69  vi xmlhr/Employee.java 
+   70  vi xmlhr/Department.java 
+   71  javac -d . xmlhr/*.java
+   72  java XmlBindTest Accounting
+   73  java XmlBindTest
+   74  vi dept.xml 
+   75  vi xmlhr/Employee.java 
+   76  javac -d . xmlhr/*.java
+   77  java XmlBindTest Accounting
+   78  java XmlBindTest
+   79  vi dept.xml 
+   80  vi RandomAccessFileTest.java
+   81  javac RandomAccessFileTest.java
+   82  java RandomAccessFileTest dept.xml 
+   83  vi dept.xml 
+   84  java RandomAccessFileTest dept.xml 
+   85  vi dept.xml 
+   86  java
+   87  java -X 
+   88  cp RandomAccessFileTest.java MemMapFileTest.java
+   89  vi MemMapFileTest.java 
+   90  javac MemMapFileTest.java 
+   91  java MemMapFileTest dept.xml 
+   92  vi dept.xml 
+   93  java MemMapFileTest dept.xml 
+   94  vi dept.xml 
+   95  history > cmd10-05-2017.txt
